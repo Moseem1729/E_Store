@@ -4,10 +4,10 @@ import com.lcwd.electronic.store.config.AppConstants;
 import com.lcwd.electronic.store.controllers.UserController;
 import com.lcwd.electronic.store.dtos.UserDto;
 import com.lcwd.electronic.store.entities.User;
+import com.lcwd.electronic.store.exceptions.ResourceNotFoundException;
 import com.lcwd.electronic.store.repositories.UserRepository;
 import com.lcwd.electronic.store.services.UserService;
 import lombok.extern.slf4j.Slf4j;
-import org.jetbrains.annotations.NotNull;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 @Slf4j
 public class UserServiceImpl implements UserService {
 
-    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
+    private static final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
     @Autowired
     private UserRepository userRepository;
@@ -33,20 +33,23 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserDto createUser( UserDto userDto) {
 
-        //generate unique id in string format
+        logger.info("Creating user: {}", userDto.getName());
         String userId = UUID.randomUUID().toString();
         userDto.setUserId(userId);
-//        dto->entity
+
         User user = mapper.map(userDto, User.class);
         User savedUser = userRepository.save(user);
-//        dto->entity
+        logger.info("User created successfully: {}", savedUser.getName());
+
         UserDto newDto = mapper.map(user, UserDto.class);
         return newDto;
     }
 
     @Override
     public UserDto updateUser(UserDto userDto, String userId) {
-        User user = userRepository.findById(userId).orElseThrow(() -> new RuntimeException(AppConstants.USER_NOT_FOUND + userId));
+        logger.info("Updating user: {} with ID: {}", userDto.getName(), userId);
+
+        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + userId));
         user.setName(userDto.getName());
 
         user.setAbout(userDto.getAbout());
@@ -55,46 +58,65 @@ public class UserServiceImpl implements UserService {
         user.setImageName(userDto.getImageName());
 
         User updatedUser = userRepository.save(user);
+        logger.info("User updated successfully: {} with ID: {}", updatedUser.getName(), userId);
+
         UserDto updatedDto = mapper.map(updatedUser, UserDto.class);
         return updatedDto;
     }
 
     @Override
     public void deleteUser(String userId) {
-        User user = userRepository.findById(userId).orElseThrow(() -> new RuntimeException(AppConstants.USER_NOT_FOUND + userId));
+        logger.info("Deleting user with Id: {}", userId);
+        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + userId));
         userRepository.delete(user);
+        logger.info("User deleted successfully with Id: {}", userId);
     }
 
     @Override
     public List<UserDto> getAllUser() {
+        logger.info("Retrieving all users");
         List<User> users = userRepository.findAll();
+        logger.info("Successfully retrieved all users");
+
         List<UserDto> dtoList = users.stream().map((user) -> mapper.map(user, UserDto.class)).collect(Collectors.toList());
         return dtoList;
     }
 
     @Override
     public UserDto getUserById(String userId) {
-        User user = userRepository.findById(userId).orElseThrow(() -> new RuntimeException(AppConstants.USER_NOT_FOUND + userId));
+        logger.info("Retrieving user by Id: {}", userId);
+
+        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + userId));
+        logger.info("Successfully retrieved user: {}", user);
+
         UserDto userDto = mapper.map(user, UserDto.class);
         return userDto;
     }
 
     @Override
     public UserDto getUserByEmail(String email) {
-        User user = userRepository.findByEmail(email).orElseThrow(() -> new RuntimeException(AppConstants.USER_NOT_FOUND + email));
+        logger.info("Retrieving user by email: {}", email);
+
+        User user = userRepository.findByEmail(email).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND_EMAIL + email));
+        logger.info("Successfully retrieved user: {}", user);
+
         return mapper.map(user, UserDto.class);
     }
 
     @Override
     public List<UserDto> searchUser(String keyword) {
+        logger.info("Searching for users containing keyword: {}", keyword);
+
         List<User> users = userRepository.findByNameContaining(keyword);
+        logger.info("Successfully retrieved users matching the search");
+
         List<UserDto> dtoList = users.stream().map((user) -> mapper.map(user, UserDto.class)).collect(Collectors.toList());
         return dtoList;
     }
 
-    private User dtoToEntity(UserDto userDto) {
-
-//        User user = User.builder()
+//    private User dtoToEntity(UserDto userDto) {
+//
+//          User user = User.builder()
 //                .userId(userDto.getUserId())
 //                .name(userDto.getName())
 //                .email(userDto.getEmail())
@@ -103,12 +125,12 @@ public class UserServiceImpl implements UserService {
 //                .gender(userDto.getGender())
 //                .imageName(userDto.getImageName())
 //                .build();
+//
+//        return  mapper.map(userDto, User.class);
+//    }
 
-        return  mapper.map(userDto, User.class);
-    }
-
-    private UserDto entityToDto(User user) {
-
+//    private UserDto entityToDto(User user) {
+//
 //        UserDto userDto = UserDto.builder()
 //                .userId(user.getUserId())
 //                .name(user.getName())
@@ -118,7 +140,7 @@ public class UserServiceImpl implements UserService {
 //                .gender(user.getGender())
 //                .imageName(user.getImageName())
 //                .build();
-
-        return mapper.map(user, UserDto.class);
-    }
+//
+//        return mapper.map(user, UserDto.class);
+//    }
 }
