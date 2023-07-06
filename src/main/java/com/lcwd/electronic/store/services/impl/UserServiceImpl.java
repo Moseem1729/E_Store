@@ -7,6 +7,7 @@ import com.lcwd.electronic.store.entities.User;
 import com.lcwd.electronic.store.repositories.UserRepository;
 import com.lcwd.electronic.store.services.UserService;
 import lombok.extern.slf4j.Slf4j;
+import org.jetbrains.annotations.NotNull;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,7 +31,7 @@ public class UserServiceImpl implements UserService {
     private ModelMapper mapper;
 
     @Override
-    public UserDto createUser(UserDto userDto) {
+    public UserDto createUser( UserDto userDto) {
 
         //generate unique id in string format
         String userId = UUID.randomUUID().toString();
@@ -67,27 +68,27 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UserDto> getAllUser() {
         List<User> users = userRepository.findAll();
-        List<UserDto> dtoList = users.stream().map((user) -> entityToDto(user)).collect(Collectors.toList());
+        List<UserDto> dtoList = users.stream().map((user) -> mapper.map(user, UserDto.class)).collect(Collectors.toList());
         return dtoList;
     }
 
     @Override
     public UserDto getUserById(String userId) {
         User user = userRepository.findById(userId).orElseThrow(() -> new RuntimeException(AppConstants.USER_NOT_FOUND + userId));
-        UserDto userDto = entityToDto(user);
+        UserDto userDto = mapper.map(user, UserDto.class);
         return userDto;
     }
 
     @Override
     public UserDto getUserByEmail(String email) {
         User user = userRepository.findByEmail(email).orElseThrow(() -> new RuntimeException(AppConstants.USER_NOT_FOUND + email));
-        return entityToDto(user);
+        return mapper.map(user, UserDto.class);
     }
 
     @Override
     public List<UserDto> searchUser(String keyword) {
         List<User> users = userRepository.findByNameContaining(keyword);
-        List<UserDto> dtoList = users.stream().map((user) -> entityToDto(user)).collect(Collectors.toList());
+        List<UserDto> dtoList = users.stream().map((user) -> mapper.map(user, UserDto.class)).collect(Collectors.toList());
         return dtoList;
     }
 
