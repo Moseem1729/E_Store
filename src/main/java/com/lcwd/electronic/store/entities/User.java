@@ -28,6 +28,7 @@ public class User {
 
     private String gender;
 
+    @Column(name = "about")
     private String about;
 
     @Column(name = "user_image_name")
