@@ -6,7 +6,6 @@ public class AppConstants {
 
     public static final String USER_NOT_FOUND_EMAIL = "User resource not found on server with Email: ";
 
-
     public static final String DELETE_USER = "User is successfully deleted !!";
 
 }

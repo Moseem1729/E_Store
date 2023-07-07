@@ -1,4 +1,4 @@
-package com.lcwd.electronic.store.dtos;
+package com.lcwd.electronic.store.payload;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

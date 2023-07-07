@@ -1,13 +1,11 @@
 package com.lcwd.electronic.store.services.impl;
 
 import com.lcwd.electronic.store.config.AppConstants;
-import com.lcwd.electronic.store.controllers.UserController;
 import com.lcwd.electronic.store.dtos.UserDto;
 import com.lcwd.electronic.store.entities.User;
 import com.lcwd.electronic.store.exceptions.ResourceNotFoundException;
 import com.lcwd.electronic.store.repositories.UserRepository;
 import com.lcwd.electronic.store.services.UserService;
-import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +17,7 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
-@Slf4j
+//@Slf4j
 public class UserServiceImpl implements UserService {
 
     private static final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
@@ -33,13 +31,13 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserDto createUser( UserDto userDto) {
 
-        logger.info("Creating user: {}", userDto.getName());
+        logger.info("Sending request to repository for creating user: {}", userDto.getName());
         String userId = UUID.randomUUID().toString();
         userDto.setUserId(userId);
 
         User user = mapper.map(userDto, User.class);
         User savedUser = userRepository.save(user);
-        logger.info("User created successfully: {}", savedUser.getName());
+        logger.info("Sending response to controller of user created successfully: {}", savedUser.getName());
 
         UserDto newDto = mapper.map(user, UserDto.class);
         return newDto;
@@ -47,7 +45,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDto updateUser(UserDto userDto, String userId) {
-        logger.info("Updating user: {} with ID: {}", userDto.getName(), userId);
+        logger.info("Sending request to repository for updating user: {} with ID: {}", userDto.getName(), userId);
 
         User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + userId));
         user.setName(userDto.getName());
@@ -58,7 +56,7 @@ public class UserServiceImpl implements UserService {
         user.setImageName(userDto.getImageName());
 
         User updatedUser = userRepository.save(user);
-        logger.info("User updated successfully: {} with ID: {}", updatedUser.getName(), userId);
+        logger.info("Sending response to controller of user updated successfully: {} with ID: {}", updatedUser.getName(), userId);
 
         UserDto updatedDto = mapper.map(updatedUser, UserDto.class);
         return updatedDto;
@@ -66,17 +64,17 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void deleteUser(String userId) {
-        logger.info("Deleting user with Id: {}", userId);
+        logger.info("Sending request to repository for deleting user with Id: {}", userId);
         User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + userId));
         userRepository.delete(user);
-        logger.info("User deleted successfully with Id: {}", userId);
+        logger.info("Sending response to controller of user deleted successfully with Id: {}", userId);
     }
 
     @Override
     public List<UserDto> getAllUser() {
-        logger.info("Retrieving all users");
+        logger.info("Sending request to repository for retrieving all users");
         List<User> users = userRepository.findAll();
-        logger.info("Successfully retrieved all users");
+        logger.info("Sending response to controller of successfully retrieved all users");
 
         List<UserDto> dtoList = users.stream().map((user) -> mapper.map(user, UserDto.class)).collect(Collectors.toList());
         return dtoList;
@@ -84,10 +82,10 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDto getUserById(String userId) {
-        logger.info("Retrieving user by Id: {}", userId);
+        logger.info("Sending request to repository for retrieving user by Id: {}", userId);
 
         User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + userId));
-        logger.info("Successfully retrieved user: {}", user);
+        logger.info("Sending response to controller of successfully retrieved user: {}", user);
 
         UserDto userDto = mapper.map(user, UserDto.class);
         return userDto;
@@ -95,20 +93,20 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDto getUserByEmail(String email) {
-        logger.info("Retrieving user by email: {}", email);
+        logger.info("Sending request to repository for retrieving user by email: {}", email);
 
         User user = userRepository.findByEmail(email).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND_EMAIL + email));
-        logger.info("Successfully retrieved user: {}", user);
+        logger.info("Sending response to controller of successfully retrieved user: {}", user);
 
         return mapper.map(user, UserDto.class);
     }
 
     @Override
     public List<UserDto> searchUser(String keyword) {
-        logger.info("Searching for users containing keyword: {}", keyword);
+        logger.info("Sending request to repository for searching for users containing keyword: {}", keyword);
 
         List<User> users = userRepository.findByNameContaining(keyword);
-        logger.info("Successfully retrieved users matching the search");
+        logger.info("Sending response to controller of successfully retrieved users matching the search");
 
         List<UserDto> dtoList = users.stream().map((user) -> mapper.map(user, UserDto.class)).collect(Collectors.toList());
         return dtoList;
