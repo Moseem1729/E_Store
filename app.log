@@ -93,3 +93,504 @@
 07:07 20:30:59.954 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
 07:07 20:30:59.962 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
 07:07 20:30:59.978 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+07:07 23:40:39.566 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 4320 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+07:07 23:40:39.566 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+07:07 23:40:39.666 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+07:07 23:40:40.895 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07:07 23:40:40.897 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07:07 23:40:53.849 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07:07 23:40:55.561 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 1488 ms. Found 1 JPA repository interfaces.
+07:07 23:41:11.683 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 8080 (http)
+07:07 23:41:11.895 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-8080"]
+07:07 23:41:11.943 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+07:07 23:41:11.946 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+07:07 23:41:13.958 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+07:07 23:41:13.960 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 33056 ms
+07:07 23:41:17.862 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+07:07 23:41:19.262 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+07:07 23:41:24.287 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07:07 23:41:25.913 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+07:07 23:41:30.872 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+07:07 23:41:31.094 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+07:07 23:41:42.498 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07:07 23:41:42.628 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+07:07 23:41:49.025 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:07 23:41:53.185 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+07:07 23:41:53.473 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-8080"]
+07:07 23:41:54.315 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 8080 (http) with context path ''
+07:07 23:41:55.010 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 82.051 seconds (JVM running for 92.328)
+07:07 23:42:11.198 [http-nio-8080-exec-3] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+07:07 23:42:11.205 [http-nio-8080-exec-3] [INFO] [o.s.web.servlet.DispatcherServlet] -Initializing Servlet 'dispatcherServlet'
+07:07 23:42:11.220 [http-nio-8080-exec-3] [INFO] [o.s.web.servlet.DispatcherServlet] -Completed initialization in 14 ms
+07:07 23:42:13.315 [http-nio-8080-exec-3] [INFO] [c.l.e.s.controllers.UserController] -Sending request to service for updating user with ID: 954d423a-674d-46a3-81
+07:07 23:42:13.318 [http-nio-8080-exec-3] [INFO] [c.l.e.s.s.impl.UserServiceImpl] -Sending request to repository for updating user: Rajan with ID: 954d423a-674d-46a3-81
+07:07 23:42:13.769 [http-nio-8080-exec-3] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -Exception Handler Invoked !!
+07:07 23:42:14.248 [http-nio-8080-exec-3] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [com.lcwd.electronic.store.exceptions.ResourceNotFoundException: User resource not found on server with Id: 954d423a-674d-46a3-81]
+07:07 23:42:40.176 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+07:07 23:42:40.198 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+07:07 23:42:40.290 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+07:07 23:44:43.743 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+07:07 23:44:43.871 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 9224 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+07:07 23:44:43.878 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+07:07 23:44:44.439 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07:07 23:44:44.441 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07:07 23:44:50.778 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07:07 23:44:51.264 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 416 ms. Found 1 JPA repository interfaces.
+07:07 23:44:57.574 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 8080 (http)
+07:07 23:44:57.644 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-8080"]
+07:07 23:44:57.655 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+07:07 23:44:57.657 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+07:07 23:44:58.523 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+07:07 23:44:58.525 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 14077 ms
+07:07 23:44:59.849 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+07:07 23:45:00.393 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+07:07 23:45:01.928 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07:07 23:45:02.860 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+07:07 23:45:05.189 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+07:07 23:45:05.318 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+07:07 23:45:10.890 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07:07 23:45:10.967 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+07:07 23:45:15.279 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:07 23:45:17.831 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+07:07 23:45:17.938 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-8080"]
+07:07 23:45:18.112 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 8080 (http) with context path ''
+07:07 23:45:18.217 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 39.255 seconds (JVM running for 49.213)
+07:07 23:45:32.623 [http-nio-8080-exec-2] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+07:07 23:45:32.626 [http-nio-8080-exec-2] [INFO] [o.s.web.servlet.DispatcherServlet] -Initializing Servlet 'dispatcherServlet'
+07:07 23:45:32.648 [http-nio-8080-exec-2] [INFO] [o.s.web.servlet.DispatcherServlet] -Completed initialization in 18 ms
+07:07 23:45:33.083 [http-nio-8080-exec-2] [INFO] [c.l.e.s.controllers.UserController] -Sending request to service for retrieving all users
+07:07 23:45:33.087 [http-nio-8080-exec-2] [INFO] [c.l.e.s.s.impl.UserServiceImpl] -Sending request to repository for retrieving all users
+07:07 23:45:34.643 [http-nio-8080-exec-2] [INFO] [c.l.e.s.s.impl.UserServiceImpl] -Sending response to controller of successfully retrieved all users
+07:07 23:45:34.931 [http-nio-8080-exec-2] [INFO] [c.l.e.s.controllers.UserController] -Successfully retrieved all users
+07:07 23:46:29.637 [http-nio-8080-exec-3] [WARN] [o.s.w.s.m.s.DefaultHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.updateUser(com.lcwd.electronic.store.dtos.UserDto,java.lang.String): [Field error in object 'userDto' on field 'email': rejected value [akkiegmail.com]; codes [Email.userDto.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@646c7c7e,.*]; default message [Invalid User Email !!]] ]
+07:07 23:46:47.493 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+07:07 23:46:47.519 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+07:07 23:46:47.620 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+07:07 23:54:58.976 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 12792 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+07:07 23:54:59.060 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+07:07 23:54:59.198 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+07:07 23:54:59.809 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07:07 23:54:59.812 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07:07 23:55:10.421 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07:07 23:55:11.111 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 568 ms. Found 1 JPA repository interfaces.
+07:07 23:55:19.390 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 8080 (http)
+07:07 23:55:19.469 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-8080"]
+07:07 23:55:19.484 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+07:07 23:55:19.486 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+07:07 23:55:20.387 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+07:07 23:55:20.388 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 20569 ms
+07:07 23:55:21.790 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+07:07 23:55:22.332 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+07:07 23:55:23.864 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07:07 23:55:24.946 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+07:07 23:55:27.559 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+07:07 23:55:27.707 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+07:07 23:55:33.505 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07:07 23:55:33.576 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+07:07 23:55:37.251 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:07 23:55:39.975 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+07:07 23:55:40.076 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-8080"]
+07:07 23:55:40.235 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 8080 (http) with context path ''
+07:07 23:55:40.331 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 44.99 seconds (JVM running for 50.898)
+07:07 23:55:49.401 [http-nio-8080-exec-1] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+07:07 23:55:49.402 [http-nio-8080-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] -Initializing Servlet 'dispatcherServlet'
+07:07 23:55:49.411 [http-nio-8080-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] -Completed initialization in 8 ms
+07:07 23:55:51.079 [http-nio-8080-exec-1] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:07 23:55:51.389 [http-nio-8080-exec-1] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.updateUser(com.lcwd.electronic.store.dtos.UserDto,java.lang.String): [Field error in object 'userDto' on field 'email': rejected value [akkiegmail.com]; codes [Email.userDto.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@265e4d55,.*]; default message [Invalid User Email !!]] ]
+07:07 23:58:54.699 [http-nio-8080-exec-4] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:07 23:58:54.719 [http-nio-8080-exec-4] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.updateUser(com.lcwd.electronic.store.dtos.UserDto,java.lang.String): [Field error in object 'userDto' on field 'email': rejected value [akkiegmail.com]; codes [Email.userDto.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@265e4d55,.*]; default message [Invalid User Email !!]] ]
+07:07 23:59:04.852 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+07:07 23:59:04.887 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+07:07 23:59:05.128 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+07:07 23:59:49.189 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+07:07 23:59:49.224 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 4448 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+07:07 23:59:49.232 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+07:07 23:59:49.960 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07:07 23:59:49.962 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07:07 23:59:57.790 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07:07 23:59:58.379 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 500 ms. Found 1 JPA repository interfaces.
+07:08 00:00:06.329 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 8080 (http)
+07:08 00:00:06.481 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-8080"]
+07:08 00:00:06.511 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+07:08 00:00:06.516 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+07:08 00:00:07.607 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+07:08 00:00:07.609 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 17641 ms
+07:08 00:00:09.257 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+07:08 00:00:09.843 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+07:08 00:00:11.999 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07:08 00:00:13.715 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+07:08 00:00:17.155 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+07:08 00:00:17.407 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+07:08 00:00:27.697 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07:08 00:00:27.971 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+07:08 00:00:35.185 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:08 00:00:39.740 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+07:08 00:00:39.937 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-8080"]
+07:08 00:00:40.162 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 8080 (http) with context path ''
+07:08 00:00:40.363 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 54.921 seconds (JVM running for 63.343)
+07:08 00:00:51.749 [http-nio-8080-exec-4] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+07:08 00:00:51.750 [http-nio-8080-exec-4] [INFO] [o.s.web.servlet.DispatcherServlet] -Initializing Servlet 'dispatcherServlet'
+07:08 00:00:51.765 [http-nio-8080-exec-4] [INFO] [o.s.web.servlet.DispatcherServlet] -Completed initialization in 13 ms
+07:08 00:00:53.510 [http-nio-8080-exec-4] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:08 00:00:53.917 [http-nio-8080-exec-4] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.updateUser(com.lcwd.electronic.store.dtos.UserDto,java.lang.String): [Field error in object 'userDto' on field 'email': rejected value [akkiegmail.com]; codes [Email.userDto.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@5ade554d,.*]; default message [Invalid User Email !!]] ]
+07:08 00:08:10.240 [http-nio-8080-exec-8] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:08 00:08:10.261 [http-nio-8080-exec-8] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.updateUser(com.lcwd.electronic.store.dtos.UserDto,java.lang.String): [Field error in object 'userDto' on field 'email': rejected value [akkiegmail.com]; codes [Email.userDto.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@5ade554d,.*]; default message [Invalid User Email !!]] ]
+07:08 00:08:19.248 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+07:08 00:08:19.271 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+07:08 00:08:19.338 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+07:08 00:09:00.583 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 8912 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+07:08 00:09:00.573 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+07:08 00:09:00.639 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+07:08 00:09:01.335 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07:08 00:09:01.341 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07:08 00:09:08.221 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07:08 00:09:08.772 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 469 ms. Found 1 JPA repository interfaces.
+07:08 00:09:15.194 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 8080 (http)
+07:08 00:09:15.263 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-8080"]
+07:08 00:09:15.275 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+07:08 00:09:15.277 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+07:08 00:09:16.018 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+07:08 00:09:16.019 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 14669 ms
+07:08 00:09:17.541 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+07:08 00:09:18.139 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+07:08 00:09:19.736 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07:08 00:09:20.713 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+07:08 00:09:23.271 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+07:08 00:09:23.427 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+07:08 00:09:28.877 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07:08 00:09:28.954 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+07:08 00:09:32.622 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:08 00:09:35.245 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+07:08 00:09:35.334 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-8080"]
+07:08 00:09:35.500 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 8080 (http) with context path ''
+07:08 00:09:35.607 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 39.069 seconds (JVM running for 45.164)
+07:08 00:10:18.874 [http-nio-8080-exec-2] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+07:08 00:10:18.886 [http-nio-8080-exec-2] [INFO] [o.s.web.servlet.DispatcherServlet] -Initializing Servlet 'dispatcherServlet'
+07:08 00:10:18.901 [http-nio-8080-exec-2] [INFO] [o.s.web.servlet.DispatcherServlet] -Completed initialization in 14 ms
+07:08 00:10:20.382 [http-nio-8080-exec-2] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:08 00:10:20.677 [http-nio-8080-exec-2] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.updateUser(com.lcwd.electronic.store.dtos.UserDto,java.lang.String): [Field error in object 'userDto' on field 'email': rejected value [akkiegmail.com]; codes [Email.userDto.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@562fadd9,.*]; default message [Invalid User Email !!]] ]
+07:08 00:18:49.450 [http-nio-8080-exec-4] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:08 00:18:49.503 [http-nio-8080-exec-4] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.updateUser(com.lcwd.electronic.store.dtos.UserDto,java.lang.String): [Field error in object 'userDto' on field 'email': rejected value [akkiegmail.com]; codes [Email.userDto.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@562fadd9,.*]; default message [Invalid User Email !!]] ]
+07:08 00:18:54.964 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+07:08 00:18:55.004 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+07:08 00:18:55.121 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+07:08 00:19:30.227 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+07:08 00:19:30.299 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 2748 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+07:08 00:19:30.307 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+07:08 00:19:30.906 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07:08 00:19:30.909 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07:08 00:19:37.240 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07:08 00:19:37.714 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 409 ms. Found 1 JPA repository interfaces.
+07:08 00:19:44.613 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 8080 (http)
+07:08 00:19:44.680 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-8080"]
+07:08 00:19:44.691 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+07:08 00:19:44.693 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+07:08 00:19:45.451 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+07:08 00:19:45.452 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 14537 ms
+07:08 00:19:46.766 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+07:08 00:19:47.384 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+07:08 00:19:48.884 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07:08 00:19:49.851 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+07:08 00:19:52.352 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+07:08 00:19:52.485 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+07:08 00:19:58.050 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07:08 00:19:58.122 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+07:08 00:20:02.047 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:08 00:20:04.991 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+07:08 00:20:05.083 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-8080"]
+07:08 00:20:05.245 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 8080 (http) with context path ''
+07:08 00:20:05.349 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 38.358 seconds (JVM running for 43.584)
+07:08 00:20:26.151 [http-nio-8080-exec-2] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+07:08 00:20:26.152 [http-nio-8080-exec-2] [INFO] [o.s.web.servlet.DispatcherServlet] -Initializing Servlet 'dispatcherServlet'
+07:08 00:20:26.165 [http-nio-8080-exec-2] [INFO] [o.s.web.servlet.DispatcherServlet] -Completed initialization in 12 ms
+07:08 00:20:27.817 [http-nio-8080-exec-2] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:08 00:20:28.070 [http-nio-8080-exec-2] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.updateUser(com.lcwd.electronic.store.dtos.UserDto,java.lang.String): [Field error in object 'userDto' on field 'email': rejected value [akkiegmail.com]; codes [Email.userDto.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@4987e447,.*]; default message [Invalid User Email !!]] ]
+07:08 00:20:36.821 [http-nio-8080-exec-4] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:08 00:20:36.844 [http-nio-8080-exec-4] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.updateUser(com.lcwd.electronic.store.dtos.UserDto,java.lang.String): [Field error in object 'userDto' on field 'email': rejected value [akkiegmail.com]; codes [Email.userDto.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@4987e447,.*]; default message [Invalid User Email !!]] ]
+07:08 00:21:18.662 [http-nio-8080-exec-6] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:08 00:21:18.696 [http-nio-8080-exec-6] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.updateUser(com.lcwd.electronic.store.dtos.UserDto,java.lang.String): [Field error in object 'userDto' on field 'email': rejected value [akkiegmail.com]; codes [Email.userDto.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@4987e447,.*]; default message [Invalid User Email !!]] ]
+07:08 00:21:23.568 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+07:08 00:21:23.599 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+07:08 00:21:23.679 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+07:08 00:21:59.787 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+07:08 00:21:59.840 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 11860 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+07:08 00:21:59.849 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+07:08 00:22:00.396 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07:08 00:22:00.429 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07:08 00:22:06.708 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07:08 00:22:07.213 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 426 ms. Found 1 JPA repository interfaces.
+07:08 00:22:15.765 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 8080 (http)
+07:08 00:22:15.895 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-8080"]
+07:08 00:22:15.912 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+07:08 00:22:15.914 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+07:08 00:22:17.051 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+07:08 00:22:17.062 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 16626 ms
+07:08 00:22:19.211 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+07:08 00:22:19.669 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+07:08 00:22:21.257 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07:08 00:22:22.471 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+07:08 00:22:25.200 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+07:08 00:22:25.330 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+07:08 00:22:31.761 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07:08 00:22:31.828 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+07:08 00:22:36.618 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:08 00:22:39.760 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+07:08 00:22:39.844 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-8080"]
+07:08 00:22:40.062 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 8080 (http) with context path ''
+07:08 00:22:40.267 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 43.566 seconds (JVM running for 49.464)
+07:08 00:24:02.348 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+07:08 00:24:02.432 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+07:08 00:24:02.601 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+07:08 00:24:31.514 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+07:08 00:24:31.626 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 2016 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+07:08 00:24:31.636 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+07:08 00:24:32.418 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07:08 00:24:32.422 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07:08 00:24:43.624 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07:08 00:24:44.246 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 532 ms. Found 1 JPA repository interfaces.
+07:08 00:24:53.072 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 8080 (http)
+07:08 00:24:53.135 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-8080"]
+07:08 00:24:53.160 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+07:08 00:24:53.162 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+07:08 00:24:53.881 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+07:08 00:24:53.883 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 21447 ms
+07:08 00:24:55.912 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+07:08 00:24:56.595 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+07:08 00:24:58.445 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07:08 00:25:00.167 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+07:08 00:25:04.013 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+07:08 00:25:04.193 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+07:08 00:25:11.272 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07:08 00:25:11.381 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+07:08 00:25:17.118 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:08 00:25:21.393 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+07:08 00:25:21.624 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-8080"]
+07:08 00:25:22.121 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 8080 (http) with context path ''
+07:08 00:25:22.353 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 55.095 seconds (JVM running for 65.535)
+07:08 00:25:26.788 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+07:08 00:25:26.823 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+07:08 00:25:26.947 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+07:08 00:26:05.363 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+07:08 00:26:05.454 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 4172 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+07:08 00:26:05.468 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+07:08 00:26:06.108 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07:08 00:26:06.112 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07:08 00:26:13.987 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07:08 00:26:14.922 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 714 ms. Found 1 JPA repository interfaces.
+07:08 00:26:24.274 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 8080 (http)
+07:08 00:26:24.441 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-8080"]
+07:08 00:26:24.469 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+07:08 00:26:24.480 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+07:08 00:26:25.569 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+07:08 00:26:25.571 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 19439 ms
+07:08 00:26:27.684 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+07:08 00:26:28.403 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+07:08 00:26:29.975 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07:08 00:26:30.905 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+07:08 00:26:33.264 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+07:08 00:26:33.423 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+07:08 00:26:38.970 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07:08 00:26:39.060 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+07:08 00:26:43.398 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:08 00:26:46.111 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+07:08 00:26:46.222 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-8080"]
+07:08 00:26:46.432 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 8080 (http) with context path ''
+07:08 00:26:46.514 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 44.69 seconds (JVM running for 51.373)
+07:08 00:26:56.072 [http-nio-8080-exec-1] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+07:08 00:26:56.073 [http-nio-8080-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] -Initializing Servlet 'dispatcherServlet'
+07:08 00:26:56.089 [http-nio-8080-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] -Completed initialization in 14 ms
+07:08 00:26:57.927 [http-nio-8080-exec-1] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:08 00:26:58.271 [http-nio-8080-exec-1] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.updateUser(com.lcwd.electronic.store.dtos.UserDto,java.lang.String): [Field error in object 'userDto' on field 'email': rejected value [akkiegmail.com]; codes [Email.userDto.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@5ae70caf,.*]; default message [Invalid User Email !!]] ]
+07:08 00:27:15.435 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+07:08 00:27:15.502 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+07:08 00:27:15.594 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+07:08 01:08:38.395 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+07:08 01:08:38.452 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 7376 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+07:08 01:08:38.508 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+07:08 01:08:39.289 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07:08 01:08:39.293 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07:08 01:08:48.381 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07:08 01:08:48.927 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 468 ms. Found 1 JPA repository interfaces.
+07:08 01:08:55.020 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 8080 (http)
+07:08 01:08:55.089 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-8080"]
+07:08 01:08:55.102 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+07:08 01:08:55.105 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+07:08 01:08:55.945 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+07:08 01:08:55.947 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 16642 ms
+07:08 01:08:57.640 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+07:08 01:08:58.345 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+07:08 01:09:00.176 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07:08 01:09:01.350 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+07:08 01:09:04.264 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+07:08 01:09:04.452 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+07:08 01:09:09.917 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07:08 01:09:09.985 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+07:08 01:09:15.572 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:08 01:09:19.455 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+07:08 01:09:20.060 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-8080"]
+07:08 01:09:20.603 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 8080 (http) with context path ''
+07:08 01:09:20.832 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 47.211 seconds (JVM running for 56.502)
+07:08 01:09:40.343 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+07:08 01:09:40.373 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+07:08 01:09:40.451 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+07:08 01:10:39.250 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+07:08 01:10:39.289 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 7148 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+07:08 01:10:39.351 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+07:08 01:10:39.949 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07:08 01:10:39.952 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07:08 01:10:49.164 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07:08 01:10:49.979 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 681 ms. Found 1 JPA repository interfaces.
+07:08 01:10:58.366 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 8080 (http)
+07:08 01:10:58.529 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-8080"]
+07:08 01:10:58.542 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+07:08 01:10:58.545 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+07:08 01:10:59.515 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+07:08 01:10:59.518 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 19560 ms
+07:08 01:11:01.315 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+07:08 01:11:01.977 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+07:08 01:11:04.044 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07:08 01:11:05.255 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+07:08 01:11:10.289 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+07:08 01:11:10.424 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+07:08 01:11:16.952 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07:08 01:11:17.021 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+07:08 01:11:22.397 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:08 01:11:25.932 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+07:08 01:11:26.052 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-8080"]
+07:08 01:11:26.221 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 8080 (http) with context path ''
+07:08 01:11:26.328 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 51.37 seconds (JVM running for 61.454)
+07:08 01:11:51.524 [http-nio-8080-exec-1] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+07:08 01:11:51.526 [http-nio-8080-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] -Initializing Servlet 'dispatcherServlet'
+07:08 01:11:51.545 [http-nio-8080-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] -Completed initialization in 17 ms
+07:08 01:11:55.861 [http-nio-8080-exec-1] [INFO] [c.l.e.s.validate.ImageNameValidator] -Message from isValid: 
+07:08 01:11:56.296 [http-nio-8080-exec-1] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:08 01:11:57.276 [http-nio-8080-exec-1] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.createUser(com.lcwd.electronic.store.dtos.UserDto) with 3 errors: [Field error in object 'userDto' on field 'email': rejected value [mg18gmailcom]; codes [Pattern.userDto.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@3c61d176,^[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+(?:\.[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$]; default message [Please enter valid email id !!]] [Field error in object 'userDto' on field 'name': rejected value [Moseem Vajeer Pathan]; codes [Size.userDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.name,name]; arguments []; default message [name],15,3]; default message [Username must be min of 3 and max of 15 characters !!]] [Field error in object 'userDto' on field 'imageName': rejected value []; codes [ImageNameValid.userDto.imageName,ImageNameValid.imageName,ImageNameValid.java.lang.String,ImageNameValid]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.imageName,imageName]; arguments []; default message [imageName]]; default message [Image is required !!]] ]
+07:08 01:12:52.455 [http-nio-8080-exec-4] [INFO] [c.l.e.s.validate.ImageNameValidator] -Message from isValid: 
+07:08 01:12:52.476 [http-nio-8080-exec-4] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:08 01:12:52.514 [http-nio-8080-exec-4] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.createUser(com.lcwd.electronic.store.dtos.UserDto) with 4 errors: [Field error in object 'userDto' on field 'email': rejected value []; codes [NotBlank.userDto.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email]]; default message [Email is required !!]] [Field error in object 'userDto' on field 'name': rejected value [Moseem Vajeer Pathan]; codes [Size.userDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.name,name]; arguments []; default message [name],15,3]; default message [Username must be min of 3 and max of 15 characters !!]] [Field error in object 'userDto' on field 'email': rejected value []; codes [Pattern.userDto.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@3c61d176,^[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+(?:\.[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$]; default message [Please enter valid email id !!]] [Field error in object 'userDto' on field 'imageName': rejected value []; codes [ImageNameValid.userDto.imageName,ImageNameValid.imageName,ImageNameValid.java.lang.String,ImageNameValid]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.imageName,imageName]; arguments []; default message [imageName]]; default message [Image is required !!]] ]
+07:08 01:13:23.016 [http-nio-8080-exec-6] [INFO] [c.l.e.s.validate.ImageNameValidator] -Message from isValid: 
+07:08 01:13:23.028 [http-nio-8080-exec-6] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:08 01:13:23.040 [http-nio-8080-exec-6] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.createUser(com.lcwd.electronic.store.dtos.UserDto) with 4 errors: [Field error in object 'userDto' on field 'email': rejected value []; codes [NotBlank.userDto.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email]]; default message [Email is required !!]] [Field error in object 'userDto' on field 'name': rejected value [th]; codes [Size.userDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.name,name]; arguments []; default message [name],15,3]; default message [Username must be min of 3 and max of 15 characters !!]] [Field error in object 'userDto' on field 'email': rejected value []; codes [Pattern.userDto.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@3c61d176,^[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+(?:\.[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$]; default message [Please enter valid email id !!]] [Field error in object 'userDto' on field 'imageName': rejected value []; codes [ImageNameValid.userDto.imageName,ImageNameValid.imageName,ImageNameValid.java.lang.String,ImageNameValid]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.imageName,imageName]; arguments []; default message [imageName]]; default message [Image is required !!]] ]
+07:08 01:13:50.751 [http-nio-8080-exec-8] [INFO] [c.l.e.s.validate.ImageNameValidator] -Message from isValid: abc.png
+07:08 01:13:50.756 [http-nio-8080-exec-8] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:08 01:13:50.767 [http-nio-8080-exec-8] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.createUser(com.lcwd.electronic.store.dtos.UserDto) with 3 errors: [Field error in object 'userDto' on field 'email': rejected value []; codes [NotBlank.userDto.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email]]; default message [Email is required !!]] [Field error in object 'userDto' on field 'email': rejected value []; codes [Pattern.userDto.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@3c61d176,^[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+(?:\.[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$]; default message [Please enter valid email id !!]] [Field error in object 'userDto' on field 'name': rejected value [th]; codes [Size.userDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.name,name]; arguments []; default message [name],15,3]; default message [Username must be min of 3 and max of 15 characters !!]] ]
+07:08 01:14:24.207 [http-nio-8080-exec-10] [INFO] [c.l.e.s.validate.ImageNameValidator] -Message from isValid: abc.png
+07:08 01:14:24.218 [http-nio-8080-exec-10] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:08 01:14:24.227 [http-nio-8080-exec-10] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.createUser(com.lcwd.electronic.store.dtos.UserDto) with 2 errors: [Field error in object 'userDto' on field 'email': rejected value []; codes [Pattern.userDto.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@3c61d176,^[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+(?:\.[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$]; default message [Please enter valid email id !!]] [Field error in object 'userDto' on field 'email': rejected value []; codes [NotBlank.userDto.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email]]; default message [Email is required !!]] ]
+07:08 01:14:45.999 [http-nio-8080-exec-1] [INFO] [c.l.e.s.validate.ImageNameValidator] -Message from isValid: abc.png
+07:08 01:14:46.004 [http-nio-8080-exec-1] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:08 01:14:46.012 [http-nio-8080-exec-1] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.createUser(com.lcwd.electronic.store.dtos.UserDto): [Field error in object 'userDto' on field 'email': rejected value [mowgmal]; codes [Pattern.userDto.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@3c61d176,^[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+(?:\.[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$]; default message [Please enter valid email id !!]] ]
+07:08 01:15:24.873 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+07:08 01:15:24.908 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+07:08 01:15:24.969 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+07:08 01:16:54.299 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+07:08 01:16:54.354 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 11724 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+07:08 01:16:54.372 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+07:08 01:16:55.094 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07:08 01:16:55.097 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07:08 01:17:03.022 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07:08 01:17:03.591 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 469 ms. Found 1 JPA repository interfaces.
+07:08 01:17:11.486 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 8080 (http)
+07:08 01:17:11.554 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-8080"]
+07:08 01:17:11.567 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+07:08 01:17:11.569 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+07:08 01:17:12.861 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+07:08 01:17:12.864 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 17760 ms
+07:08 01:17:14.562 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+07:08 01:17:15.123 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+07:08 01:17:17.003 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07:08 01:17:18.302 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+07:08 01:17:21.239 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+07:08 01:17:21.407 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+07:08 01:17:27.833 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07:08 01:17:27.916 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+07:08 01:17:31.890 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:08 01:17:35.526 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+07:08 01:17:35.745 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-8080"]
+07:08 01:17:35.910 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 8080 (http) with context path ''
+07:08 01:17:36.063 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 45.529 seconds (JVM running for 52.955)
+07:08 01:17:55.098 [http-nio-8080-exec-2] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+07:08 01:17:55.099 [http-nio-8080-exec-2] [INFO] [o.s.web.servlet.DispatcherServlet] -Initializing Servlet 'dispatcherServlet'
+07:08 01:17:55.109 [http-nio-8080-exec-2] [INFO] [o.s.web.servlet.DispatcherServlet] -Completed initialization in 8 ms
+07:08 01:17:56.694 [http-nio-8080-exec-2] [INFO] [c.l.e.s.validate.ImageNameValidator] -Message from isValid: abc.png
+07:08 01:17:56.811 [http-nio-8080-exec-2] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:08 01:17:57.155 [http-nio-8080-exec-2] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.createUser(com.lcwd.electronic.store.dtos.UserDto): [Field error in object 'userDto' on field 'email': rejected value [mowgmal]; codes [Pattern.userDto.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@53e5003b,^[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+(?:\.[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$]; default message [Please enter valid email id !!]] ]
+07:08 01:18:13.181 [http-nio-8080-exec-4] [INFO] [c.l.e.s.validate.ImageNameValidator] -Message from isValid: abc.png
+07:08 01:18:13.194 [http-nio-8080-exec-4] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:08 01:18:13.206 [http-nio-8080-exec-4] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.createUser(com.lcwd.electronic.store.dtos.UserDto) with 2 errors: [Field error in object 'userDto' on field 'name': rejected value [Mo]; codes [Size.userDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.name,name]; arguments []; default message [name],15,3]; default message [Username must be min of 3 and max of 15 characters !!]] [Field error in object 'userDto' on field 'email': rejected value [mowgmal]; codes [Pattern.userDto.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@53e5003b,^[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+(?:\.[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$]; default message [Please enter valid email id !!]] ]
+07:08 01:18:45.069 [http-nio-8080-exec-6] [INFO] [c.l.e.s.validate.ImageNameValidator] -Message from isValid: 
+07:08 01:18:45.075 [http-nio-8080-exec-6] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:08 01:18:45.086 [http-nio-8080-exec-6] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.createUser(com.lcwd.electronic.store.dtos.UserDto) with 3 errors: [Field error in object 'userDto' on field 'email': rejected value [mowgmal]; codes [Pattern.userDto.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@53e5003b,^[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+(?:\.[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$]; default message [Please enter valid email id !!]] [Field error in object 'userDto' on field 'name': rejected value [Mo]; codes [Size.userDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.name,name]; arguments []; default message [name],15,3]; default message [Username must be min of 3 and max of 15 characters !!]] [Field error in object 'userDto' on field 'imageName': rejected value []; codes [ImageNameValid.userDto.imageName,ImageNameValid.imageName,ImageNameValid.java.lang.String,ImageNameValid]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.imageName,imageName]; arguments []; default message [imageName]]; default message [Image is required !!]] ]
+07:08 01:26:51.097 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+07:08 01:26:51.139 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+07:08 01:26:51.222 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+07:08 01:27:27.410 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+07:08 01:27:27.459 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 12284 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+07:08 01:27:27.479 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+07:08 01:27:27.990 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07:08 01:27:27.992 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07:08 01:27:34.542 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07:08 01:27:35.044 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 439 ms. Found 1 JPA repository interfaces.
+07:08 01:27:41.057 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 8080 (http)
+07:08 01:27:41.122 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-8080"]
+07:08 01:27:41.138 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+07:08 01:27:41.146 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+07:08 01:27:42.031 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+07:08 01:27:42.033 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 14035 ms
+07:08 01:27:43.400 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+07:08 01:27:43.934 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+07:08 01:27:45.326 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07:08 01:27:46.200 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+07:08 01:27:48.535 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+07:08 01:27:48.680 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+07:08 01:27:53.842 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07:08 01:27:53.909 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+07:08 01:27:57.471 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:08 01:28:00.001 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+07:08 01:28:00.119 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-8080"]
+07:08 01:28:00.281 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 8080 (http) with context path ''
+07:08 01:28:00.375 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 36.059 seconds (JVM running for 41.936)
+07:08 01:28:10.893 [http-nio-8080-exec-1] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+07:08 01:28:10.894 [http-nio-8080-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] -Initializing Servlet 'dispatcherServlet'
+07:08 01:28:10.927 [http-nio-8080-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] -Completed initialization in 22 ms
+07:08 01:28:12.641 [http-nio-8080-exec-1] [INFO] [c.l.e.s.validate.ImageNameValidator] -Message from isValid: 
+07:08 01:28:12.710 [http-nio-8080-exec-1] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:08 01:28:13.082 [http-nio-8080-exec-1] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.createUser(com.lcwd.electronic.store.dtos.UserDto) with 3 errors: [Field error in object 'userDto' on field 'email': rejected value [mowgmal]; codes [Pattern.userDto.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@4ae6f0a1,^[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+(?:\.[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$]; default message [Please enter valid email id !!]] [Field error in object 'userDto' on field 'name': rejected value [Mo]; codes [Size.userDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.name,name]; arguments []; default message [name],15,3]; default message [Username must be min of 3 and max of 15 characters !!]] [Field error in object 'userDto' on field 'imageName': rejected value []; codes [ImageNameValid.userDto.imageName,ImageNameValid.imageName,ImageNameValid.java.lang.String,ImageNameValid]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.imageName,imageName]; arguments []; default message [imageName]]; default message [Image is required !!]] ]
+07:08 01:30:54.607 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+07:08 01:30:54.642 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+07:08 01:30:54.714 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+07:08 01:31:29.632 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+07:08 01:31:29.695 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 7704 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+07:08 01:31:29.734 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+07:08 01:31:30.281 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07:08 01:31:30.282 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07:08 01:31:36.704 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07:08 01:31:37.218 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 429 ms. Found 1 JPA repository interfaces.
+07:08 01:31:43.247 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 8080 (http)
+07:08 01:31:43.307 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-8080"]
+07:08 01:31:43.317 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+07:08 01:31:43.319 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+07:08 01:31:44.041 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+07:08 01:31:44.046 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 13754 ms
+07:08 01:31:45.286 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+07:08 01:31:45.747 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+07:08 01:31:47.115 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07:08 01:31:48.161 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+07:08 01:31:50.754 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+07:08 01:31:50.888 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+07:08 01:31:56.420 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07:08 01:31:56.491 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+07:08 01:32:00.302 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:08 01:32:02.898 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+07:08 01:32:03.007 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-8080"]
+07:08 01:32:03.175 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 8080 (http) with context path ''
+07:08 01:32:03.268 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 36.64 seconds (JVM running for 42.349)
+07:08 01:32:15.067 [http-nio-8080-exec-2] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+07:08 01:32:15.069 [http-nio-8080-exec-2] [INFO] [o.s.web.servlet.DispatcherServlet] -Initializing Servlet 'dispatcherServlet'
+07:08 01:32:15.076 [http-nio-8080-exec-2] [INFO] [o.s.web.servlet.DispatcherServlet] -Completed initialization in 6 ms
+07:08 01:32:16.642 [http-nio-8080-exec-2] [INFO] [c.l.e.s.validate.ImageNameValidator] -Message from isValid: 
+07:08 01:32:16.723 [http-nio-8080-exec-2] [INFO] [c.l.e.s.e.GlobalExceptionHandler] -MethodArgumentNotValidException Handler Invoked !!
+07:08 01:32:17.137 [http-nio-8080-exec-2] [WARN] [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver] -Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.lcwd.electronic.store.dtos.UserDto> com.lcwd.electronic.store.controllers.UserController.createUser(com.lcwd.electronic.store.dtos.UserDto) with 3 errors: [Field error in object 'userDto' on field 'name': rejected value [Mo]; codes [Size.userDto.name,Size.name,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.name,name]; arguments []; default message [name],15,3]; default message [Username must be min of 3 and max of 15 characters !!]] [Field error in object 'userDto' on field 'email': rejected value [mowgmal]; codes [Pattern.userDto.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.email,email]; arguments []; default message [email],[Ljavax.validation.constraints.Pattern$Flag;@72a45234,^[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+(?:\.[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$]; default message [Please enter valid email id !!]] [Field error in object 'userDto' on field 'imageName': rejected value []; codes [ImageNameValid.userDto.imageName,ImageNameValid.imageName,ImageNameValid.java.lang.String,ImageNameValid]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.imageName,imageName]; arguments []; default message [imageName]]; default message [Image is required !!]] ]
+07:08 01:32:47.608 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+07:08 01:32:47.643 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+07:08 01:32:47.750 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.

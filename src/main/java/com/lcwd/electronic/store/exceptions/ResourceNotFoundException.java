@@ -7,10 +7,14 @@ import lombok.Setter;
 @Getter
 public class ResourceNotFoundException extends RuntimeException{
 
-    String mes;
 
+    public ResourceNotFoundException() {
+        super("Resource not found !!");
+    }
+
+    //String mes;
     public ResourceNotFoundException(String message) {
-        super();
-        this.mes = message;
+        super(message);
+        //this.mes = message;
     }
 }

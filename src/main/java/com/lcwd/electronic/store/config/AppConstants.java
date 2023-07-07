@@ -8,4 +8,8 @@ public class AppConstants {
 
     public static final String DELETE_USER = "User is successfully deleted !!";
 
+
+    public static final String REGEX = "^[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+(?:\\.[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$";
+
+
 }

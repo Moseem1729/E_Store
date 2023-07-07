@@ -1,11 +1,10 @@
 package com.lcwd.electronic.store.dtos;
 
+import com.lcwd.electronic.store.config.AppConstants;
+import com.lcwd.electronic.store.validate.ImageNameValid;
 import lombok.*;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 
 @Getter
 @Setter
@@ -21,7 +20,8 @@ public class UserDto {
     @Size(min = 3, max = 15, message = "Username must be min of 3 and max of 15 characters !!")
     private String name;
 
-    @Email(message = "Invalid User Email !!")
+    @Pattern(regexp = AppConstants.REGEX, message = "Please enter valid email id !!")
+    @NotBlank(message = "Email is required !!")
     private String email;
 
     @NotBlank(message = "Password is required !!")
@@ -31,9 +31,10 @@ public class UserDto {
     private String gender;
 
 
-    @NotBlank(message = "About is required !!")
+    @NotBlank(message = "Write something about yourself !!")
     private String about;
 
+    @ImageNameValid(message = "Image is required !!")
     private String imageName;
 
     @Override

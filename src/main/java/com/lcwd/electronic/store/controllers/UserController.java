@@ -70,7 +70,7 @@ public class UserController {
         logger.info("Sending request to service for deleting user with ID: {}", userId);
         userService.deleteUser(userId);
         logger.info("User deleted successfully with ID: {}", userId);
-        return new ResponseEntity<>(new ApiResponse(AppConstants.DELETE_USER, true), HttpStatus.OK);
+        return new ResponseEntity<>(new ApiResponse(AppConstants.DELETE_USER, HttpStatus.OK, true), HttpStatus.OK);
     }
 
     //get all
