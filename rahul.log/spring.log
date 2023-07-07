@@ -1,0 +1,37 @@
+2023-07-07 19:20:50,950 %PARSER_ERROR[l] org.springframework.boot.StartupInfoLogger logStarting Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 284 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store) 55 INFO 
+2023-07-07 19:20:50,952 %PARSER_ERROR[l] org.springframework.boot.SpringApplication logStartupProfileInfo No active profile set, falling back to 1 default profile: "default" 631 INFO 
+2023-07-07 19:20:53,186 %PARSER_ERROR[l] org.apache.juli.logging.DirectJDKLog log Starting service [Tomcat] 173 INFO 
+2023-07-07 19:20:53,187 %PARSER_ERROR[l] org.apache.juli.logging.DirectJDKLog log Starting Servlet engine: [Apache Tomcat/9.0.76] 173 INFO 
+2023-07-07 19:20:53,311 %PARSER_ERROR[l] org.apache.juli.logging.DirectJDKLog log Initializing Spring embedded WebApplicationContext 173 INFO 
+2023-07-07 19:20:53,641 %PARSER_ERROR[l] org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [name: default] 31 INFO 
+2023-07-07 19:20:53,720 %PARSER_ERROR[l] org.hibernate.Version logVersion HHH000412: Hibernate ORM core version 5.6.15.Final 44 INFO 
+2023-07-07 19:20:53,956 %PARSER_ERROR[l] org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit> HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 56 INFO 
+2023-07-07 19:20:54,099 %PARSER_ERROR[l] com.zaxxer.hikari.HikariDataSource getConnection HikariPool-1 - Starting... 110 INFO 
+2023-07-07 19:20:54,637 %PARSER_ERROR[l] com.zaxxer.hikari.HikariDataSource getConnection HikariPool-1 - Start completed. 123 INFO 
+2023-07-07 19:20:54,662 %PARSER_ERROR[l] org.hibernate.dialect.Dialect <init> HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect 175 INFO 
+2023-07-07 19:20:55,852 %PARSER_ERROR[l] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 52 INFO 
+2023-07-07 19:20:57,240 %PARSER_ERROR[l] org.springframework.boot.StartupInfoLogger logStarted Started ElectronicStoreApplication in 7.064 seconds (JVM running for 8.296) 61 INFO 
+2023-07-07 19:25:43,977 %PARSER_ERROR[l] com.zaxxer.hikari.HikariDataSource close HikariPool-1 - Shutdown initiated... 350 INFO 
+2023-07-07 19:25:43,994 %PARSER_ERROR[l] com.zaxxer.hikari.HikariDataSource close HikariPool-1 - Shutdown completed. 352 INFO 
+2023-07-07 19:25:54,765 %PARSER_ERROR[l] org.springframework.boot.StartupInfoLogger logStarting Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 10352 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store) 55 INFO 
+2023-07-07 19:25:54,767 %PARSER_ERROR[l] org.springframework.boot.SpringApplication logStartupProfileInfo No active profile set, falling back to 1 default profile: "default" 631 INFO 
+2023-07-07 19:25:57,629 %PARSER_ERROR[l] org.apache.juli.logging.DirectJDKLog log Starting service [Tomcat] 173 INFO 
+2023-07-07 19:25:57,630 %PARSER_ERROR[l] org.apache.juli.logging.DirectJDKLog log Starting Servlet engine: [Apache Tomcat/9.0.76] 173 INFO 
+2023-07-07 19:25:57,768 %PARSER_ERROR[l] org.apache.juli.logging.DirectJDKLog log Initializing Spring embedded WebApplicationContext 173 INFO 
+2023-07-07 19:25:58,148 %PARSER_ERROR[l] org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [name: default] 31 INFO 
+2023-07-07 19:25:58,223 %PARSER_ERROR[l] org.hibernate.Version logVersion HHH000412: Hibernate ORM core version 5.6.15.Final 44 INFO 
+2023-07-07 19:25:58,474 %PARSER_ERROR[l] org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit> HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 56 INFO 
+2023-07-07 19:25:58,617 %PARSER_ERROR[l] com.zaxxer.hikari.HikariDataSource getConnection HikariPool-1 - Starting... 110 INFO 
+2023-07-07 19:25:59,149 %PARSER_ERROR[l] com.zaxxer.hikari.HikariDataSource getConnection HikariPool-1 - Start completed. 123 INFO 
+2023-07-07 19:25:59,176 %PARSER_ERROR[l] org.hibernate.dialect.Dialect <init> HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect 175 INFO 
+2023-07-07 19:26:00,080 %PARSER_ERROR[l] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 52 INFO 
+2023-07-07 19:26:01,308 %PARSER_ERROR[l] org.springframework.boot.StartupInfoLogger logStarted Started ElectronicStoreApplication in 7.262 seconds (JVM running for 8.031) 61 INFO 
+2023-07-07 19:28:03,563 %PARSER_ERROR[l] org.apache.juli.logging.DirectJDKLog log Initializing Spring DispatcherServlet 'dispatcherServlet' 173 INFO 
+2023-07-07 19:28:03,608 %PARSER_ERROR[l] com.lcwd.electronic.store.controllers.UserController getUser Sending request to service for retrieving user with ID: 954d423a-674d-46a3-814d-682358 99 INFO 
+2023-07-07 19:28:03,608 %PARSER_ERROR[l] com.lcwd.electronic.store.services.impl.UserServiceImpl getUserById Sending request to repository for retrieving user by Id: 954d423a-674d-46a3-814d-682358 85 INFO 
+2023-07-07 19:28:22,537 %PARSER_ERROR[l] com.lcwd.electronic.store.controllers.UserController getAllUser Sending request to service for retrieving all users 83 INFO 
+2023-07-07 19:28:22,537 %PARSER_ERROR[l] com.lcwd.electronic.store.services.impl.UserServiceImpl getAllUser Sending request to repository for retrieving all users 75 INFO 
+2023-07-07 19:28:22,672 %PARSER_ERROR[l] com.lcwd.electronic.store.services.impl.UserServiceImpl getAllUser Sending response to controller of successfully retrieved all users 77 INFO 
+2023-07-07 19:28:22,704 %PARSER_ERROR[l] com.lcwd.electronic.store.controllers.UserController getAllUser Successfully retrieved all users 85 INFO 
+2023-07-07 19:29:51,509 %PARSER_ERROR[l] com.zaxxer.hikari.HikariDataSource close HikariPool-1 - Shutdown initiated... 350 INFO 
+2023-07-07 19:29:51,522 %PARSER_ERROR[l] com.zaxxer.hikari.HikariDataSource close HikariPool-1 - Shutdown completed. 352 INFO 
