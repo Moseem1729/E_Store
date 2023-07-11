@@ -1,6 +1,7 @@
 package com.lcwd.electronic.store.controllers;
 
 import com.lcwd.electronic.store.config.AppConstants;
+import com.lcwd.electronic.store.dtos.PageableResponse;
 import com.lcwd.electronic.store.payload.ApiResponse;
 import com.lcwd.electronic.store.dtos.UserDto;
 import com.lcwd.electronic.store.services.UserService;
@@ -80,9 +81,14 @@ public class UserController {
      * @return ResponseEntity<UserDto>
      */
     @GetMapping("/getAll")
-    public ResponseEntity<List<UserDto>> getAllUser(){
+    public ResponseEntity<PageableResponse<UserDto>> getAllUser(
+            @RequestParam(value = "pageNumber", defaultValue = "0",required = false) int pageNumber,
+            @RequestParam(value = "pageSize", defaultValue = "10",required = false) int pageSize,
+            @RequestParam(value = "sortBy", defaultValue = "name",required = false) String sortBy,
+            @RequestParam(value = "sortDir", defaultValue = "asc",required = false) String sortDir
+    ){
         logger.info("Sending request to service for retrieving all users");
-        List<UserDto> allUser = userService.getAllUser();
+        PageableResponse<UserDto> allUser = userService.getAllUser(pageNumber, pageSize, sortBy, sortDir);
         logger.info("Successfully retrieved all users");
         return new ResponseEntity<>(allUser, HttpStatus.OK);
     }

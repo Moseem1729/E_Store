@@ -1,6 +1,7 @@
 package com.lcwd.electronic.store.services.impl;
 
 import com.lcwd.electronic.store.config.AppConstants;
+import com.lcwd.electronic.store.dtos.PageableResponse;
 import com.lcwd.electronic.store.dtos.UserDto;
 import com.lcwd.electronic.store.entities.User;
 import com.lcwd.electronic.store.exceptions.ResourceNotFoundException;
@@ -10,6 +11,10 @@ import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -71,13 +76,24 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<UserDto> getAllUser() {
+    public PageableResponse<UserDto> getAllUser(int pageNumber, int pageSize, String sortBy, String sortDir) {
         logger.info("Sending request to repository for retrieving all users");
-        List<User> users = userRepository.findAll();
+        Sort sort = sortDir.equalsIgnoreCase("asc") ? Sort.by(sortBy).ascending() : Sort.by(sortBy).descending();
+        Pageable pageable = PageRequest.of(pageNumber, pageSize, sort);
+        Page<User> page = userRepository.findAll(pageable);
+        List<User> userList = page.getContent();
         logger.info("Sending response to controller of successfully retrieved all users");
 
-        List<UserDto> dtoList = users.stream().map((user) -> mapper.map(user, UserDto.class)).collect(Collectors.toList());
-        return dtoList;
+        List<Object> dtoList = userList.stream().map((user) -> mapper.map(user, UserDto.class)).collect(Collectors.toList());
+        PageableResponse pageableResponse = PageableResponse.builder()
+                .content(dtoList)
+                .pageNumber(page.getNumber())
+                .pageSize(page.getSize())
+                .totalElements(page.getTotalElements())
+                .totalPages(page.getTotalPages())
+                .lastPage(page.isLast())
+                .build();
+        return pageableResponse;
     }
 
     @Override

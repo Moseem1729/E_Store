@@ -17,7 +17,7 @@ public class UserDto {
 
     //@NotEmpty
 
-    @Size(min = 3, max = 15, message = "Username must be min of 3 and max of 15 characters !!")
+    @Size(min = 3, max = 20, message = "Username must be min of 3 and max of 15 characters !!")
     private String name;
 
     @Pattern(regexp = AppConstants.REGEX, message = "Please enter valid email id !!")
