@@ -5,6 +5,7 @@ import com.lcwd.electronic.store.dtos.PageableResponse;
 import com.lcwd.electronic.store.dtos.UserDto;
 import com.lcwd.electronic.store.entities.User;
 import com.lcwd.electronic.store.exceptions.ResourceNotFoundException;
+import com.lcwd.electronic.store.helper.Helper;
 import com.lcwd.electronic.store.repositories.UserRepository;
 import com.lcwd.electronic.store.services.UserService;
 import org.modelmapper.ModelMapper;
@@ -84,15 +85,16 @@ public class UserServiceImpl implements UserService {
         List<User> userList = page.getContent();
         logger.info("Sending response to controller of successfully retrieved all users");
 
-        List<Object> dtoList = userList.stream().map((user) -> mapper.map(user, UserDto.class)).collect(Collectors.toList());
-        PageableResponse pageableResponse = PageableResponse.builder()
-                .content(dtoList)
-                .pageNumber(page.getNumber())
-                .pageSize(page.getSize())
-                .totalElements(page.getTotalElements())
-                .totalPages(page.getTotalPages())
-                .lastPage(page.isLast())
-                .build();
+        PageableResponse<UserDto> pageableResponse = Helper.getPageableResponse(page, UserDto.class);
+//        List<UserDto> dtoList = userList.stream().map((user) -> mapper.map(user, UserDto.class)).collect(Collectors.toList());
+//        PageableResponse<UserDto> pageableResponse = new PageableResponse<>();
+//        pageableResponse.setContent(dtoList);
+//        pageableResponse.setPageNumber(page.getNumber());
+//        pageableResponse.setPageSize(page.getSize());
+//        pageableResponse.setTotalElements(page.getTotalElements());
+//        pageableResponse.setTotalPages(page.getTotalPages());
+//        pageableResponse.setLastPage(page.isLast());
+
         return pageableResponse;
     }
 

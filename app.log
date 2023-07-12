@@ -686,3 +686,82 @@
 07:11 23:58:48.005 [http-nio-8080-exec-8] [INFO] [c.l.e.s.s.impl.UserServiceImpl] -Sending request to repository for retrieving all users
 07:11 23:58:48.017 [http-nio-8080-exec-8] [INFO] [c.l.e.s.s.impl.UserServiceImpl] -Sending response to controller of successfully retrieved all users
 07:11 23:58:48.018 [http-nio-8080-exec-8] [INFO] [c.l.e.s.controllers.UserController] -Successfully retrieved all users
+07:12 01:09:37.296 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+07:12 01:09:37.530 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+07:12 01:09:37.569 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+07:12 01:17:18.085 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+07:12 01:17:18.105 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 16120 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+07:12 01:17:18.107 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+07:12 01:17:18.242 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07:12 01:17:18.243 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07:12 01:17:19.610 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07:12 01:17:19.734 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 108 ms. Found 1 JPA repository interfaces.
+07:12 01:17:21.505 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 8080 (http)
+07:12 01:17:21.523 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-8080"]
+07:12 01:17:21.528 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+07:12 01:17:21.529 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+07:12 01:17:21.834 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+07:12 01:17:21.835 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 3591 ms
+07:12 01:17:22.278 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+07:12 01:17:22.486 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+07:12 01:17:22.964 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07:12 01:17:23.648 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+07:12 01:17:24.666 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+07:12 01:17:24.717 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+07:12 01:17:26.395 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07:12 01:17:26.422 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+07:12 01:17:27.562 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:12 01:17:28.165 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+07:12 01:17:28.181 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-8080"]
+07:12 01:17:28.215 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 8080 (http) with context path ''
+07:12 01:17:28.231 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 10.874 seconds (JVM running for 12.099)
+07:12 01:17:41.250 [http-nio-8080-exec-2] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+07:12 01:17:41.251 [http-nio-8080-exec-2] [INFO] [o.s.web.servlet.DispatcherServlet] -Initializing Servlet 'dispatcherServlet'
+07:12 01:17:41.255 [http-nio-8080-exec-2] [INFO] [o.s.web.servlet.DispatcherServlet] -Completed initialization in 3 ms
+07:12 01:17:41.362 [http-nio-8080-exec-2] [INFO] [c.l.e.s.controllers.UserController] -Sending request to service for retrieving all users
+07:12 01:17:41.363 [http-nio-8080-exec-2] [INFO] [c.l.e.s.s.impl.UserServiceImpl] -Sending request to repository for retrieving all users
+07:12 01:17:42.033 [http-nio-8080-exec-2] [INFO] [c.l.e.s.s.impl.UserServiceImpl] -Sending response to controller of successfully retrieved all users
+07:12 01:17:42.188 [http-nio-8080-exec-2] [INFO] [c.l.e.s.controllers.UserController] -Successfully retrieved all users
+07:12 01:17:54.934 [http-nio-8080-exec-3] [INFO] [c.l.e.s.controllers.UserController] -Sending request to service for retrieving all users
+07:12 01:17:54.935 [http-nio-8080-exec-3] [INFO] [c.l.e.s.s.impl.UserServiceImpl] -Sending request to repository for retrieving all users
+07:12 01:17:54.954 [http-nio-8080-exec-3] [INFO] [c.l.e.s.s.impl.UserServiceImpl] -Sending response to controller of successfully retrieved all users
+07:12 01:17:54.957 [http-nio-8080-exec-3] [INFO] [c.l.e.s.controllers.UserController] -Successfully retrieved all users
+07:12 01:18:53.109 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+07:12 01:18:53.124 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+07:12 01:18:53.157 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+07:12 01:19:05.344 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+07:12 01:19:05.358 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 17536 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+07:12 01:19:05.360 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+07:12 01:19:05.494 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+07:12 01:19:05.494 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+07:12 01:19:07.682 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+07:12 01:19:08.013 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 293 ms. Found 1 JPA repository interfaces.
+07:12 01:19:10.092 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 8080 (http)
+07:12 01:19:10.110 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-8080"]
+07:12 01:19:10.114 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+07:12 01:19:10.115 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+07:12 01:19:10.262 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+07:12 01:19:10.262 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 4767 ms
+07:12 01:19:10.566 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+07:12 01:19:10.685 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+07:12 01:19:11.045 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+07:12 01:19:11.286 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+07:12 01:19:11.994 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+07:12 01:19:12.048 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+07:12 01:19:13.566 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+07:12 01:19:13.592 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+07:12 01:19:14.471 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:12 01:19:15.070 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+07:12 01:19:15.090 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-8080"]
+07:12 01:19:15.122 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 8080 (http) with context path ''
+07:12 01:19:15.136 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 10.628 seconds (JVM running for 12.062)
+07:12 01:19:22.325 [http-nio-8080-exec-1] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+07:12 01:19:22.325 [http-nio-8080-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] -Initializing Servlet 'dispatcherServlet'
+07:12 01:19:22.327 [http-nio-8080-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] -Completed initialization in 2 ms
+07:12 01:19:22.411 [http-nio-8080-exec-1] [INFO] [c.l.e.s.controllers.UserController] -Sending request to service for retrieving all users
+07:12 01:19:22.411 [http-nio-8080-exec-1] [INFO] [c.l.e.s.s.impl.UserServiceImpl] -Sending request to repository for retrieving all users
+07:12 01:19:23.244 [http-nio-8080-exec-1] [INFO] [c.l.e.s.s.impl.UserServiceImpl] -Sending response to controller of successfully retrieved all users
+07:12 01:19:23.387 [http-nio-8080-exec-1] [INFO] [c.l.e.s.controllers.UserController] -Successfully retrieved all users
+07:12 01:21:09.321 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+07:12 01:21:09.329 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+07:12 01:21:09.341 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
