@@ -48,9 +48,19 @@ public class GlobalExceptionHandler {
             response.put(fieldName, apiResponse);
         }
 
-
         return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
     }
+
+    //
+    @ExceptionHandler(BadApiRequest.class)
+    public ResponseEntity<ApiResponse> badApiRequestHandler(BadApiRequest e){
+
+        logger.info("BadApiRequest Handler Invoked !!");
+        return new ResponseEntity<>(new ApiResponse(e.getMessage(), HttpStatus.BAD_REQUEST, false), HttpStatus.BAD_REQUEST);
+    }
+
+
+
 
 
 
