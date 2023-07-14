@@ -1,7 +1,8 @@
 package com.lcwd.electronic.store.services.impl;
 
-import com.lcwd.electronic.store.exceptions.BadApiRequest;
+import com.lcwd.electronic.store.exceptions.BadApiRequestException;
 import com.lcwd.electronic.store.services.FileService;
+import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
@@ -9,6 +10,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.UUID;
 
+@Service
 public class FileServiceImpl implements FileService {
 
 
@@ -23,7 +25,7 @@ public class FileServiceImpl implements FileService {
         String fileName = UUID.randomUUID().toString();
         String extension = originalFilename.substring(originalFilename.lastIndexOf("."));
         String fileNameWithExtension = fileName + extension;
-        String fullPathWithFileName = path + File.separator +fileNameWithExtension;
+        String fullPathWithFileName = path+fileNameWithExtension;
 
         if (extension.equalsIgnoreCase(".png") || extension.equalsIgnoreCase(".jpg") || extension.equalsIgnoreCase(".jpeg")){
 
@@ -39,7 +41,7 @@ public class FileServiceImpl implements FileService {
             Files.copy(file.getInputStream(), Paths.get(fullPathWithFileName));
             return  fileNameWithExtension;
         }else {
-            throw new BadApiRequest("File with extension: "+extension+"  not allowed !!");
+            throw new BadApiRequestException("File with extension: "+extension+"  not allowed !!");
         }
 
     }

@@ -11,6 +11,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -52,11 +53,22 @@ public class GlobalExceptionHandler {
     }
 
     //
-    @ExceptionHandler(BadApiRequest.class)
-    public ResponseEntity<ApiResponse> badApiRequestHandler(BadApiRequest e){
+    @ExceptionHandler(BadApiRequestException.class)
+    public ResponseEntity<ApiResponse> badApiRequestExceptionHandler(BadApiRequestException e){
 
-        logger.info("BadApiRequest Handler Invoked !!");
+        logger.info("BadApiRequestException Handler Invoked !!");
         return new ResponseEntity<>(new ApiResponse(e.getMessage(), HttpStatus.BAD_REQUEST, false), HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(IOException.class)
+    public ResponseEntity<String> handleIOException(IOException ex) {
+        // Custom error message or response
+        String errorMessage = "Error occurred while deleting the file: " + ex.getMessage();
+
+        // Log the error
+
+        // Return an appropriate response entity with the error message
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(errorMessage);
     }
 
 
