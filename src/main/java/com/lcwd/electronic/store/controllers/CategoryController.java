@@ -36,6 +36,13 @@ public class CategoryController {
     @Value("${user.profile.image.path}")
     private String imageUploadPath;
 
+    /**
+     *
+     * @param categoryDto
+     * @return ResponseEntity<CategoryDto>
+     * @author Moseem Pathan
+     * @apiNote create category
+     */
     @PostMapping("/create")
     public ResponseEntity<CategoryDto> createCategory(@Valid @RequestBody CategoryDto categoryDto) {
 
@@ -43,6 +50,14 @@ public class CategoryController {
         return new ResponseEntity<>(createdCategory, HttpStatus.CREATED);
     }
 
+    /**
+     *
+     * @param categoryDto
+     * @param catId
+     * @return ResponseEntity<CategoryDto>
+     * @author Moseem Pathan
+     * @apiNote update category
+     */
     @PutMapping("/update/{categoryId}")
     public ResponseEntity<CategoryDto> updateCategory(
             @Valid @RequestBody CategoryDto categoryDto,
@@ -52,6 +67,13 @@ public class CategoryController {
         return ResponseEntity.ok(updatedCategory);
     }
 
+    /**
+     *
+     * @param catId
+     * @return ResponseEntity<ApiResponse>
+     * @author Moseem Pathan
+     * @apiNote delete category
+     */
     @DeleteMapping("/delete/{catId}")
     public ResponseEntity<ApiResponse> deleteCategory(@PathVariable String catId) {
 
@@ -61,29 +83,57 @@ public class CategoryController {
                 HttpStatus.ACCEPTED);
     }
 
+    /**
+     *
+     * @param pageNO
+     * @param pageSize
+     * @param sortBy
+     * @param sortDir
+     * @return ResponseEntity<PageableResponse<CategoryDto>>
+     * @author Moseem Pathan
+     * @apiNote get all categories pageable
+     */
     @GetMapping("/getAllPageable")
     public ResponseEntity<PageableResponse<CategoryDto>> getAllPageable(
             @RequestParam(defaultValue = AppConstants.PAGE_NUMBER, required = false) int pageNO,
             @RequestParam(defaultValue = AppConstants.PAGE_SIZE, required = false) int pageSize,
-            @RequestParam(defaultValue = AppConstants.SORT_BY, required = false) String sortBy,
+            @RequestParam(defaultValue = AppConstants.SORT_BY_TITLE, required = false) String sortBy,
             @RequestParam(defaultValue = AppConstants.SORT_DIR, required = false) String sortDir
     ) {
         PageableResponse<CategoryDto> pageableResponse = categoryService.getAll(pageNO, pageSize, sortBy, sortDir);
         return new ResponseEntity<>(pageableResponse, HttpStatus.OK);
     }
 
+    /**
+     *
+     * @param catId
+     * @return ResponseEntity<CategoryDto>
+     * @author Moseem Pathan
+     * @apiNote get category by id
+     */
     @GetMapping("/get/{catId}")
     public ResponseEntity<CategoryDto> getById(@PathVariable String catId) {
         CategoryDto categoryDto = categoryService.get(catId);
         return ResponseEntity.ok(categoryDto);
     }
 
+    /**
+     *
+     * @param keyword
+     * @param pageNO
+     * @param pageSize
+     * @param sortBy
+     * @param sortDir
+     * @return ResponseEntity<PageableResponse<CategoryDto>>
+     * @author Moseem Pathan
+     * @apiNote search category title by keyword
+     */
     @GetMapping("/search/{keyword}")
     public ResponseEntity<PageableResponse<CategoryDto>> getByKeyword(
             @PathVariable String keyword,
             @RequestParam(defaultValue = AppConstants.PAGE_NUMBER, required = false) int pageNO,
             @RequestParam(defaultValue = AppConstants.PAGE_SIZE, required = false) int pageSize,
-            @RequestParam(defaultValue = AppConstants.SORT_BY, required = false) String sortBy,
+            @RequestParam(defaultValue = AppConstants.SORT_BY_TITLE, required = false) String sortBy,
             @RequestParam(defaultValue = AppConstants.SORT_DIR, required = false) String sortDir
     ){
         PageableResponse<CategoryDto> pageableResponse = categoryService.search(keyword, pageNO, pageSize, sortBy, sortDir);
@@ -91,6 +141,16 @@ public class CategoryController {
     }
 
     //upload categoryCover image
+
+    /**
+     *
+     * @param image
+     * @param categoryId
+     * @return ResponseEntity<ImageResponse>
+     * @throws IOException
+     * @author Moseem Pathan
+     * @apiNote upload cover image for category
+     */
     @PostMapping("/coverImage/{categoryId}")
     public ResponseEntity<ImageResponse> uploadCatCoverImage(
             @RequestParam("categoryCoverImage") MultipartFile image,
@@ -117,6 +177,15 @@ public class CategoryController {
     }
 
     //serve coverImage
+
+    /**
+     *
+     * @param categoryId
+     * @param response
+     * @throws IOException
+     * @author Moseem Pathan
+     * @apiNote serve cover image
+     */
     @GetMapping(value = "/coverImage/{categoryId}")
     public void serveCoverImage(
             @PathVariable String categoryId,
