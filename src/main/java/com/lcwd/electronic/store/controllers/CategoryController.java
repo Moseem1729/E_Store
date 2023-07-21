@@ -1,5 +1,6 @@
 package com.lcwd.electronic.store.controllers;
 
+import com.lcwd.electronic.store.config.AppConstants;
 import com.lcwd.electronic.store.dtos.CategoryDto;
 import com.lcwd.electronic.store.dtos.PageableResponse;
 import com.lcwd.electronic.store.payload.ApiResponse;
@@ -56,16 +57,16 @@ public class CategoryController {
 
         categoryService.delete(catId);
         return new ResponseEntity<>(
-                new ApiResponse("Category deleted successfully !!", HttpStatus.OK, true),
+                new ApiResponse(AppConstants.DELETE_CATEGORY, HttpStatus.OK, true),
                 HttpStatus.ACCEPTED);
     }
 
     @GetMapping("/getAllPageable")
     public ResponseEntity<PageableResponse<CategoryDto>> getAllPageable(
-            @RequestParam(defaultValue = "0", required = false) int pageNO,
-            @RequestParam(defaultValue = "10", required = false) int pageSize,
-            @RequestParam(defaultValue = "title", required = false) String sortBy,
-            @RequestParam(defaultValue = "asc", required = false) String sortDir
+            @RequestParam(defaultValue = AppConstants.PAGE_NUMBER, required = false) int pageNO,
+            @RequestParam(defaultValue = AppConstants.PAGE_SIZE, required = false) int pageSize,
+            @RequestParam(defaultValue = AppConstants.SORT_BY, required = false) String sortBy,
+            @RequestParam(defaultValue = AppConstants.SORT_DIR, required = false) String sortDir
     ) {
         PageableResponse<CategoryDto> pageableResponse = categoryService.getAll(pageNO, pageSize, sortBy, sortDir);
         return new ResponseEntity<>(pageableResponse, HttpStatus.OK);
@@ -80,10 +81,10 @@ public class CategoryController {
     @GetMapping("/search/{keyword}")
     public ResponseEntity<PageableResponse<CategoryDto>> getByKeyword(
             @PathVariable String keyword,
-            @RequestParam(defaultValue = "0", required = false) int pageNO,
-            @RequestParam(defaultValue = "10", required = false) int pageSize,
-            @RequestParam(defaultValue = "title", required = false) String sortBy,
-            @RequestParam(defaultValue = "asc", required = false) String sortDir
+            @RequestParam(defaultValue = AppConstants.PAGE_NUMBER, required = false) int pageNO,
+            @RequestParam(defaultValue = AppConstants.PAGE_SIZE, required = false) int pageSize,
+            @RequestParam(defaultValue = AppConstants.SORT_BY, required = false) String sortBy,
+            @RequestParam(defaultValue = AppConstants.SORT_DIR, required = false) String sortDir
     ){
         PageableResponse<CategoryDto> pageableResponse = categoryService.search(keyword, pageNO, pageSize, sortBy, sortDir);
         return new ResponseEntity<>(pageableResponse, HttpStatus.OK);
@@ -107,9 +108,9 @@ public class CategoryController {
 
         ImageResponse imageResponse = ImageResponse.builder()
                 .imageName(coverImageName)
-                .message("Image uploaded successfully !!")
-                .httpStatus(HttpStatus.CREATED)
-                .success(true)
+                .message(AppConstants.IMAGE_UPLOAD)
+                .httpStatus(AppConstants.HTTP_STATUS)
+                .success(AppConstants.IMAGE_UPLOAD_SUCCESS)
                 .build();
         return  new ResponseEntity<>(imageResponse, HttpStatus.CREATED);
 

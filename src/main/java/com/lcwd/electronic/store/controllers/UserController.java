@@ -101,10 +101,10 @@ public class UserController {
      */
     @GetMapping("/getAll")
     public ResponseEntity<PageableResponse<UserDto>> getAllUser(
-            @RequestParam(value = "pageNumber", defaultValue = "0", required = false) int pageNumber,
-            @RequestParam(value = "pageSize", defaultValue = "10", required = false) int pageSize,
-            @RequestParam(value = "sortBy", defaultValue = "name", required = false) String sortBy,
-            @RequestParam(value = "sortDir", defaultValue = "asc", required = false) String sortDir
+            @RequestParam(value = "pageNumber", defaultValue = AppConstants.PAGE_NUMBER, required = false) int pageNumber,
+            @RequestParam(value = "pageSize", defaultValue = AppConstants.PAGE_SIZE, required = false) int pageSize,
+            @RequestParam(value = "sortBy", defaultValue = AppConstants.SORT_BY_NAME, required = false) String sortBy,
+            @RequestParam(value = "sortDir", defaultValue = AppConstants.SORT_DIR, required = false) String sortDir
     ) {
         logger.info("Sending request to service for retrieving all users");
         PageableResponse<UserDto> allUser = userService.getAllUser(pageNumber, pageSize, sortBy, sortDir);
@@ -161,6 +161,16 @@ public class UserController {
     }
 
     //upload user image
+
+    /**
+     *
+     * @param image
+     * @param userId
+     * @return ResponseEntity<ImageResponse>
+     * @throws IOException
+     * @author Moseem Pathan
+     * @apiNote upload image
+     */
     @PostMapping("/image/{userId}")
     public ResponseEntity<ImageResponse> uploadUserImage(
             @RequestParam("userImage") MultipartFile image,
@@ -175,15 +185,24 @@ public class UserController {
 
         ImageResponse response = ImageResponse.builder()
                 .imageName(imageName)
-                .message("Image uploaded successfully !!")
-                .httpStatus(HttpStatus.CREATED)
-                .success(true)
+                .message(AppConstants.IMAGE_UPLOAD)
+                .httpStatus(AppConstants.HTTP_STATUS)
+                .success(AppConstants.IMAGE_UPLOAD_SUCCESS)
                 .build();
         return  new ResponseEntity<>(response, HttpStatus.CREATED);
 
     }
 
     //serve image
+
+    /**
+     *
+     * @param userId
+     * @param response
+     * @throws IOException
+     * @author Moseem Pathan
+     * @apiNote upload image
+     */
     @GetMapping(value = "/image/{userId}")
     public void serveUserImage(
             @PathVariable String userId,

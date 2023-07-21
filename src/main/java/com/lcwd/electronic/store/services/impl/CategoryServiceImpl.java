@@ -1,5 +1,6 @@
 package com.lcwd.electronic.store.services.impl;
 
+import com.lcwd.electronic.store.config.AppConstants;
 import com.lcwd.electronic.store.dtos.CategoryDto;
 import com.lcwd.electronic.store.dtos.PageableResponse;
 import com.lcwd.electronic.store.entities.Category;
@@ -23,7 +24,6 @@ import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.List;
 import java.util.UUID;
 
 @Service
@@ -51,7 +51,7 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public CategoryDto update(CategoryDto categoryDto, String categoryId) {
-        Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException("Category not found Exception !!"));
+        Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.CATEGORY_NOT_FOUND + categoryId));
         //update category details
         category.setTitle(categoryDto.getTitle());
         category.setDescription((categoryDto.getDescription()));
@@ -64,7 +64,7 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public void delete(String categoryId) {
-        Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException("Category not found Exception !!"));
+        Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.CATEGORY_NOT_FOUND + categoryId));
 
         String coverImage = category.getCoverImage();
         String fullPath = imageUploadPath + coverImage;
@@ -85,7 +85,7 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public PageableResponse<CategoryDto> getAll(int pageNo, int pageSize, String sortBy, String sortDir) {
-        Sort sort = (sortDir.equalsIgnoreCase("asc")?Sort.by(sortBy).ascending():Sort.by(sortBy).descending());
+        Sort sort = (sortDir.equalsIgnoreCase(AppConstants.SORT_DIR_ASC_CHECK)?Sort.by(sortBy).ascending():Sort.by(sortBy).descending());
         Pageable pageable = PageRequest.of(pageNo, pageSize, sort);
         Page<Category> page = categoryRepository.findAll(pageable);
 
@@ -96,14 +96,14 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public CategoryDto get(String categoryId) {
-        Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException("Category not found Exception !!"));
+        Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.CATEGORY_NOT_FOUND + categoryId));
         return mapper.map(category, CategoryDto.class);
     }
 
     @Override
     public PageableResponse<CategoryDto> search(String keyword, int pageNo, int pageSize, String sortBy, String sortDir) {
 
-        Sort sort = (sortDir.equalsIgnoreCase("asc")?Sort.by(sortBy).ascending():Sort.by(sortBy).descending());
+        Sort sort = (sortDir.equalsIgnoreCase(AppConstants.SORT_DIR_ASC_CHECK)?Sort.by(sortBy).ascending():Sort.by(sortBy).descending());
         Pageable pageable = PageRequest.of(pageNo,pageSize, sort);
         Page<Category> page = categoryRepository.findByTitleContaining(keyword, pageable);
 

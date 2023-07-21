@@ -1,5 +1,6 @@
 package com.lcwd.electronic.store.services.impl;
 
+import com.lcwd.electronic.store.config.AppConstants;
 import com.lcwd.electronic.store.exceptions.BadApiRequestException;
 import com.lcwd.electronic.store.services.FileService;
 import org.slf4j.Logger;
@@ -38,7 +39,7 @@ public class FileServiceImpl implements FileService {
         logger.info("fullPathWithFileName: {}", fullPathWithFileName);
 
 
-        if (extension.equalsIgnoreCase(".png") || extension.equalsIgnoreCase(".jpg") || extension.equalsIgnoreCase(".jpeg")){
+        if (extension.equalsIgnoreCase(AppConstants.FILE_EXTENSION_PNG) || extension.equalsIgnoreCase(AppConstants.FILE_EXTENSION_JPG) || extension.equalsIgnoreCase(AppConstants.FILE_EXTENSION_JPEG)){
 
             //file save
             File f = new File(path);
@@ -54,7 +55,7 @@ public class FileServiceImpl implements FileService {
         }else {
             logger.info("BadApiRequestException fileNameWithExtension: {}", fileNameWithExtension);
 
-            throw new BadApiRequestException("File with extension: "+extension+"  not allowed !!");
+            throw new BadApiRequestException(AppConstants.EXTENSION_NOT_ALLOWED + extension);
         }
 
     }
