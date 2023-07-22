@@ -45,10 +45,10 @@ public class CategoryController {
      */
     @PostMapping("/create")
     public ResponseEntity<CategoryDto> createCategory(@Valid @RequestBody CategoryDto categoryDto) {
-        logger.info("Sending request to service for creating new Category: {}", categoryDto);
+        logger.info("Sending request to service for creating new Category: {}", categoryDto.getTitle());
 
         CategoryDto createdCategory = categoryService.create(categoryDto);
-        logger.info("Category created successfully in database: {}", createdCategory);
+        logger.info("Category created successfully in database: {}", createdCategory.getTitle());
 
         return new ResponseEntity<>(createdCategory, HttpStatus.CREATED);
     }
@@ -68,7 +68,7 @@ public class CategoryController {
         logger.info("Sending request to service for updating Category with Id: {}", catId);
 
         CategoryDto updatedCategory = categoryService.update(categoryDto, catId);
-        logger.info("Category updated successfully in database: {}", updatedCategory);
+        logger.info("Category updated successfully in database: {}", updatedCategory.getTitle());
 
         return ResponseEntity.ok(updatedCategory);
     }
@@ -85,7 +85,7 @@ public class CategoryController {
         logger.info("Sending request to service for deleting Category with Id: {}", catId);
 
         categoryService.delete(catId);
-        logger.info("Category deleted successfully from database");
+        logger.info("Category deleted successfully from database with id:{}", catId);
 
         return new ResponseEntity<>(
                 new ApiResponse(AppConstants.DELETE_CATEGORY, HttpStatus.OK, true),
@@ -129,7 +129,7 @@ public class CategoryController {
         logger.info("Sending request to service for getting Category with Id: {}", catId);
 
         CategoryDto categoryDto = categoryService.get(catId);
-        logger.info("Category fetched successfully: {}", categoryDto);
+        logger.info("Category fetched successfully: {}", categoryDto.getTitle());
 
         return ResponseEntity.ok(categoryDto);
     }
@@ -156,7 +156,7 @@ public class CategoryController {
         logger.info("Sending request to service for retrieve Categories by keyword: {}", keyword);
 
         PageableResponse<CategoryDto> pageableResponse = categoryService.search(keyword, pageNO, pageSize, sortBy, sortDir);
-        logger.info("Categories retrieved successfully in database");
+        logger.info("Categories retrieved successfully from database");
 
         return new ResponseEntity<>(pageableResponse, HttpStatus.OK);
     }

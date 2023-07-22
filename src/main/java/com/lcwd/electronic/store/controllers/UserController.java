@@ -54,9 +54,9 @@ public class UserController {
      */
     @PostMapping("/create")
     public ResponseEntity<UserDto> createUser(@Valid @RequestBody UserDto userDto) {
-        logger.info("Sending request to service for creating new user: {}", userDto);
+        logger.info("Sending request to service for creating new user: {}", userDto.getName());
         UserDto createdUser = userService.createUser(userDto);
-        logger.info("User created successfully in database: {}", createdUser);
+        logger.info("User created successfully in database: {}", createdUser.getName());
         return new ResponseEntity<>(createdUser, HttpStatus.CREATED);
     }
     //update
@@ -72,7 +72,7 @@ public class UserController {
     public ResponseEntity<UserDto> updateUser(@Valid @RequestBody UserDto userDto, @PathVariable String userId) {
         logger.info("Sending request to service for updating user with ID: {}", userId);
         UserDto updatedUser = userService.updateUser(userDto, userId);
-        logger.info("User updated successfully: {}", updatedUser);
+        logger.info("User updated successfully: {}", updatedUser.getName());
         return new ResponseEntity<>(updatedUser, HttpStatus.OK);
     }
 
@@ -124,7 +124,7 @@ public class UserController {
     public ResponseEntity<UserDto> getUser(@PathVariable String userId) {
         logger.info("Sending request to service for retrieving user with ID: {}", userId);
         UserDto user = userService.getUserById(userId);
-        logger.info("Successfully retrieved user: {}", user);
+        logger.info("Successfully retrieved user: {}", user.getName());
         return new ResponseEntity<>(user, HttpStatus.OK);
     }
 
@@ -140,7 +140,7 @@ public class UserController {
     public ResponseEntity<UserDto> getUserByEmail(@PathVariable String email) {
         logger.info("Sending request to service for retrieving user by email: {}", email);
         UserDto user = userService.getUserByEmail(email);
-        logger.info("Successfully retrieved user: {}", user);
+        logger.info("Successfully retrieved user: {}", user.getName());
         return new ResponseEntity<>(user, HttpStatus.OK);
     }
 

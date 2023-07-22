@@ -42,13 +42,13 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public CategoryDto create(CategoryDto categoryDto) {
-        logger.info("Creating new category");
+        logger.info("Creating new category:{}", categoryDto.getTitle());
         String catId = UUID.randomUUID().toString();
         logger.info("Random id generated for category:{}", catId);
         categoryDto.setCategoryId(catId);
         Category category = mapper.map(categoryDto, Category.class);
         Category savedCategory = categoryRepository.save(category);
-        logger.info("Category created successfully");
+        logger.info("Category created successfully:{}",category.getTitle());
         return mapper.map(savedCategory, CategoryDto.class);
     }
 
@@ -63,7 +63,7 @@ public class CategoryServiceImpl implements CategoryService {
         category.setCoverImage(categoryDto.getCoverImage());
 
         Category updatedCategory = categoryRepository.save(category);
-        logger.info("Category updated successfully");
+        logger.info("Category updated successfully:{}", updatedCategory.getTitle());
 
         return mapper.map(updatedCategory, CategoryDto.class);
     }
@@ -90,7 +90,7 @@ public class CategoryServiceImpl implements CategoryService {
         }
 
         categoryRepository.delete(category);
-        logger.info("Category deleted successfully");
+        logger.info("Category deleted successfully:{}", category.getTitle());
     }
 
     @Override
@@ -113,19 +113,19 @@ public class CategoryServiceImpl implements CategoryService {
         Category category = categoryRepository.findById(categoryId).
                 orElseThrow(() -> new ResourceNotFoundException(AppConstants.CATEGORY_NOT_FOUND + categoryId));
 
-        logger.info("Fetched category");
+        logger.info("Fetched category:{}", category.getTitle());
         return mapper.map(category, CategoryDto.class);
     }
 
     @Override
     public PageableResponse<CategoryDto> search(String keyword, int pageNo, int pageSize, String sortBy, String sortDir) {
 
-        logger.info("Searching categories with title containing keyword: ",keyword);
+        logger.info("Searching categories with title containing keyword: {} ",keyword);
         Sort sort = (sortDir.equalsIgnoreCase(AppConstants.SORT_DIR_ASC_CHECK) ? Sort.by(sortBy).ascending() : Sort.by(sortBy).descending());
         Pageable pageable = PageRequest.of(pageNo, pageSize, sort);
         Page<Category> page = categoryRepository.findByTitleContaining(keyword, pageable);
 
-        logger.info("Categories retrieved containing keyword");
+        logger.info("Categories retrieved containing keyword:{}", keyword);
         return Helper.getPageableResponse(page, CategoryDto.class);
     }
 }

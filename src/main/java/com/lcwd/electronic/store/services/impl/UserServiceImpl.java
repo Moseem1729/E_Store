@@ -143,7 +143,7 @@ public class UserServiceImpl implements UserService {
         logger.info("Sending request to repository for retrieving user by email: {}", email);
 
         User user = userRepository.findByEmail(email).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND_EMAIL + email));
-        logger.info("Sending response to controller of successfully retrieved user: {}", user);
+        logger.info("Sending response to controller of successfully retrieved user: {}", user.getName());
 
         return mapper.map(user, UserDto.class);
     }
