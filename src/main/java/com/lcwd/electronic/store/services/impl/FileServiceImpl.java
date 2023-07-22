@@ -5,7 +5,6 @@ import com.lcwd.electronic.store.exceptions.BadApiRequestException;
 import com.lcwd.electronic.store.services.FileService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -23,6 +22,7 @@ public class FileServiceImpl implements FileService {
     @Override
     public String uploadImage(MultipartFile file, String path) throws IOException {
 
+        logger.info("Entering uploadImage method");
         //file name
         String originalFilename = file.getOriginalFilename();
         logger.info("originalFilename: {}", originalFilename);
@@ -51,9 +51,14 @@ public class FileServiceImpl implements FileService {
 
             //upload
             Files.copy(file.getInputStream(), Paths.get(fullPathWithFileName));
+            logger.info("Exiting uploadImage method");
+
             return  fileNameWithExtension;
+
         }else {
             logger.info("BadApiRequestException fileNameWithExtension: {}", fileNameWithExtension);
+            logger.info("Exiting uploadImage method");
+
 
             throw new BadApiRequestException(AppConstants.EXTENSION_NOT_ALLOWED + extension);
         }
@@ -62,11 +67,14 @@ public class FileServiceImpl implements FileService {
 
     @Override
     public InputStream getResource(String path, String name) throws FileNotFoundException {
+        logger.info("Entering getResource method");
 
         String fullPath = path+File.separator+name;
         logger.info("fullPath: {}", fullPath);
 
         InputStream inputStream = new FileInputStream(fullPath);
+        logger.info("Exiting getResource method");
+
         return inputStream;
     }
 }

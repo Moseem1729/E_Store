@@ -52,9 +52,9 @@ public class UserServiceImpl implements UserService {
 
         User user = mapper.map(userDto, User.class);
         User savedUser = userRepository.save(user);
-        logger.info("Sending response to controller of user created successfully: {}", savedUser.getName());
 
         UserDto newDto = mapper.map(user, UserDto.class);
+        logger.info("Sending response to controller of user created successfully: {}", savedUser.getName());
         return newDto;
     }
 
@@ -71,9 +71,9 @@ public class UserServiceImpl implements UserService {
         user.setImageName(userDto.getImageName());
 
         User updatedUser = userRepository.save(user);
-        logger.info("Sending response to controller of user updated successfully: {} with ID: {}", updatedUser.getName(), userId);
 
         UserDto updatedDto = mapper.map(updatedUser, UserDto.class);
+        logger.info("Sending response to controller of user updated successfully: {} with ID: {}", updatedUser.getName(), userId);
         return updatedDto;
     }
 
@@ -110,7 +110,6 @@ public class UserServiceImpl implements UserService {
         Pageable pageable = PageRequest.of(pageNumber, pageSize, sort);
         Page<User> page = userRepository.findAll(pageable);
         List<User> userList = page.getContent();
-        logger.info("Sending response to controller of successfully retrieved all users");
 
         PageableResponse<UserDto> pageableResponse = Helper.getPageableResponse(page, UserDto.class);
 //        List<UserDto> dtoList = userList.stream().map((user) -> mapper.map(user, UserDto.class)).collect(Collectors.toList());
@@ -122,6 +121,8 @@ public class UserServiceImpl implements UserService {
 //        pageableResponse.setTotalPages(page.getTotalPages());
 //        pageableResponse.setLastPage(page.isLast());
 
+        logger.info("Sending response to controller of successfully retrieved all users");
+
         return pageableResponse;
     }
 
@@ -130,9 +131,10 @@ public class UserServiceImpl implements UserService {
         logger.info("Sending request to repository for retrieving user by Id: {}", userId);
 
         User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.USER_NOT_FOUND + userId));
-        logger.info("Sending response to controller of successfully retrieved user: {}", user);
 
         UserDto userDto = mapper.map(user, UserDto.class);
+        logger.info("Sending response to controller of successfully retrieved user: {}", user);
+
         return userDto;
     }
 
@@ -154,6 +156,8 @@ public class UserServiceImpl implements UserService {
         logger.info("Sending response to controller of successfully retrieved users matching the search");
 
         List<UserDto> dtoList = users.stream().map((user) -> mapper.map(user, UserDto.class)).collect(Collectors.toList());
+        logger.info("Sending response to controller of successfully retrieved users matching the search");
+
         return dtoList;
     }
 

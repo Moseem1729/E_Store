@@ -177,11 +177,16 @@ public class UserController {
             @PathVariable String userId
     ) throws IOException {
 
+        logger.info("Sending request to FileService for uploading image on id: {}", userId);
+
         String imageName = fileService.uploadImage(image, imageUploadPath);
 
         UserDto user = userService.getUserById(userId);
         user.setImageName(imageName);
         UserDto userDto = userService.updateUser(user, userId);
+
+        logger.info("Successfully uploaded image with name: {}", imageName);
+
 
         ImageResponse response = ImageResponse.builder()
                 .imageName(imageName)
@@ -208,10 +213,13 @@ public class UserController {
             @PathVariable String userId,
             HttpServletResponse response
     ) throws IOException {
+        logger.info("Sending request to FileService for serving image with id: {}", userId);
 
         UserDto userDto = userService.getUserById(userId);
         logger.info("user image name ; {}" , userDto.getImageName());
         InputStream resource = fileService.getResource(imageUploadPath, userDto.getImageName());
+
+        logger.info("Successfully served image with name: {}", userDto.getImageName());
 
         response.setContentType(MediaType.IMAGE_JPEG_VALUE);
         StreamUtils.copy(resource, response.getOutputStream());

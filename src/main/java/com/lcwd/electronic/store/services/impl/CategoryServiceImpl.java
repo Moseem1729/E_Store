@@ -42,29 +42,37 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public CategoryDto create(CategoryDto categoryDto) {
+        logger.info("Creating new category");
         String catId = UUID.randomUUID().toString();
+        logger.info("Random id generated for category:{}", catId);
         categoryDto.setCategoryId(catId);
         Category category = mapper.map(categoryDto, Category.class);
         Category savedCategory = categoryRepository.save(category);
+        logger.info("Category created successfully");
         return mapper.map(savedCategory, CategoryDto.class);
     }
 
     @Override
     public CategoryDto update(CategoryDto categoryDto, String categoryId) {
-        Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.CATEGORY_NOT_FOUND + categoryId));
+        logger.info("Updating Category with id: {}", categoryId);
+        Category category = categoryRepository.findById(categoryId)
+                .orElseThrow(() -> new ResourceNotFoundException(AppConstants.CATEGORY_NOT_FOUND + categoryId));
         //update category details
         category.setTitle(categoryDto.getTitle());
         category.setDescription((categoryDto.getDescription()));
         category.setCoverImage(categoryDto.getCoverImage());
 
         Category updatedCategory = categoryRepository.save(category);
+        logger.info("Category updated successfully");
 
         return mapper.map(updatedCategory, CategoryDto.class);
     }
 
     @Override
     public void delete(String categoryId) {
-        Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.CATEGORY_NOT_FOUND + categoryId));
+        logger.info("Deleting category with id: {}", categoryId);
+        Category category = categoryRepository.findById(categoryId)
+                .orElseThrow(() -> new ResourceNotFoundException(AppConstants.CATEGORY_NOT_FOUND + categoryId));
 
         String coverImage = category.getCoverImage();
         String fullPath = imageUploadPath + coverImage;
@@ -73,40 +81,51 @@ public class CategoryServiceImpl implements CategoryService {
             Path path = Paths.get(fullPath);
             Files.delete(path);
             logger.info("related cover image deleted: {}", path);
-        }catch (NoSuchFileException ex){
-            logger.info("User image not found in folder");
+        } catch (NoSuchFileException ex) {
+            logger.error("User image not found in folder");
             ex.printStackTrace();
         } catch (IOException e) {
+            logger.error("An error occurred while deleting the cover image: {}", e.getMessage());
             e.printStackTrace();
         }
 
         categoryRepository.delete(category);
+        logger.info("Category deleted successfully");
     }
 
     @Override
     public PageableResponse<CategoryDto> getAll(int pageNo, int pageSize, String sortBy, String sortDir) {
-        Sort sort = (sortDir.equalsIgnoreCase(AppConstants.SORT_DIR_ASC_CHECK)?Sort.by(sortBy).ascending():Sort.by(sortBy).descending());
+        logger.info("Getting all categories");
+        Sort sort = (sortDir.equalsIgnoreCase(AppConstants.SORT_DIR_ASC_CHECK)
+                ? Sort.by(sortBy).ascending() : Sort.by(sortBy).descending());
         Pageable pageable = PageRequest.of(pageNo, pageSize, sort);
         Page<Category> page = categoryRepository.findAll(pageable);
 
         PageableResponse<CategoryDto> pageableResponse = Helper.getPageableResponse(page, CategoryDto.class);
 
+        logger.info("Got all categories");
         return pageableResponse;
     }
 
     @Override
     public CategoryDto get(String categoryId) {
-        Category category = categoryRepository.findById(categoryId).orElseThrow(() -> new ResourceNotFoundException(AppConstants.CATEGORY_NOT_FOUND + categoryId));
+        logger.info("Fetching category with id: {}", categoryId);
+        Category category = categoryRepository.findById(categoryId).
+                orElseThrow(() -> new ResourceNotFoundException(AppConstants.CATEGORY_NOT_FOUND + categoryId));
+
+        logger.info("Fetched category");
         return mapper.map(category, CategoryDto.class);
     }
 
     @Override
     public PageableResponse<CategoryDto> search(String keyword, int pageNo, int pageSize, String sortBy, String sortDir) {
 
-        Sort sort = (sortDir.equalsIgnoreCase(AppConstants.SORT_DIR_ASC_CHECK)?Sort.by(sortBy).ascending():Sort.by(sortBy).descending());
-        Pageable pageable = PageRequest.of(pageNo,pageSize, sort);
+        logger.info("Searching categories with title containing keyword: ",keyword);
+        Sort sort = (sortDir.equalsIgnoreCase(AppConstants.SORT_DIR_ASC_CHECK) ? Sort.by(sortBy).ascending() : Sort.by(sortBy).descending());
+        Pageable pageable = PageRequest.of(pageNo, pageSize, sort);
         Page<Category> page = categoryRepository.findByTitleContaining(keyword, pageable);
 
+        logger.info("Categories retrieved containing keyword");
         return Helper.getPageableResponse(page, CategoryDto.class);
     }
 }

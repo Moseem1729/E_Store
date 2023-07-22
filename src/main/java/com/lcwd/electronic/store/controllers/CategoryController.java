@@ -45,8 +45,11 @@ public class CategoryController {
      */
     @PostMapping("/create")
     public ResponseEntity<CategoryDto> createCategory(@Valid @RequestBody CategoryDto categoryDto) {
+        logger.info("Sending request to service for creating new Category: {}", categoryDto);
 
         CategoryDto createdCategory = categoryService.create(categoryDto);
+        logger.info("Category created successfully in database: {}", createdCategory);
+
         return new ResponseEntity<>(createdCategory, HttpStatus.CREATED);
     }
 
@@ -62,8 +65,11 @@ public class CategoryController {
     public ResponseEntity<CategoryDto> updateCategory(
             @Valid @RequestBody CategoryDto categoryDto,
             @PathVariable("categoryId") String catId) {
+        logger.info("Sending request to service for updating Category with Id: {}", catId);
 
         CategoryDto updatedCategory = categoryService.update(categoryDto, catId);
+        logger.info("Category updated successfully in database: {}", updatedCategory);
+
         return ResponseEntity.ok(updatedCategory);
     }
 
@@ -76,8 +82,11 @@ public class CategoryController {
      */
     @DeleteMapping("/delete/{catId}")
     public ResponseEntity<ApiResponse> deleteCategory(@PathVariable String catId) {
+        logger.info("Sending request to service for deleting Category with Id: {}", catId);
 
         categoryService.delete(catId);
+        logger.info("Category deleted successfully from database");
+
         return new ResponseEntity<>(
                 new ApiResponse(AppConstants.DELETE_CATEGORY, HttpStatus.OK, true),
                 HttpStatus.ACCEPTED);
@@ -100,7 +109,11 @@ public class CategoryController {
             @RequestParam(defaultValue = AppConstants.SORT_BY_TITLE, required = false) String sortBy,
             @RequestParam(defaultValue = AppConstants.SORT_DIR, required = false) String sortDir
     ) {
+        logger.info("Sending request to service for getting all Categories");
+
         PageableResponse<CategoryDto> pageableResponse = categoryService.getAll(pageNO, pageSize, sortBy, sortDir);
+        logger.info("Categories retrieved successfully from database");
+
         return new ResponseEntity<>(pageableResponse, HttpStatus.OK);
     }
 
@@ -113,7 +126,11 @@ public class CategoryController {
      */
     @GetMapping("/get/{catId}")
     public ResponseEntity<CategoryDto> getById(@PathVariable String catId) {
+        logger.info("Sending request to service for getting Category with Id: {}", catId);
+
         CategoryDto categoryDto = categoryService.get(catId);
+        logger.info("Category fetched successfully: {}", categoryDto);
+
         return ResponseEntity.ok(categoryDto);
     }
 
@@ -136,7 +153,11 @@ public class CategoryController {
             @RequestParam(defaultValue = AppConstants.SORT_BY_TITLE, required = false) String sortBy,
             @RequestParam(defaultValue = AppConstants.SORT_DIR, required = false) String sortDir
     ){
+        logger.info("Sending request to service for retrieve Categories by keyword: {}", keyword);
+
         PageableResponse<CategoryDto> pageableResponse = categoryService.search(keyword, pageNO, pageSize, sortBy, sortDir);
+        logger.info("Categories retrieved successfully in database");
+
         return new ResponseEntity<>(pageableResponse, HttpStatus.OK);
     }
 
@@ -156,13 +177,16 @@ public class CategoryController {
             @RequestParam("categoryCoverImage") MultipartFile image,
             @PathVariable String categoryId
     ) throws IOException {
-
+        logger.info("Sending request to FileService for uploading new cover image");
         String coverImageName = fileService.uploadImage(image, imageUploadPath);
         logger.info("updated coverImageName this is categoryController: {}", coverImageName);
 
+        logger.info("Sending request to CategoryService for retrieving Category with id: {}", categoryId);
         CategoryDto categoryDto = categoryService.get(categoryId);
         logger.info("old image name: {}", categoryDto.getCoverImage());
         categoryDto.setCoverImage(coverImageName);
+
+        logger.info("Sending request to CategoryService for updating Category with id: {}", categoryId);
         CategoryDto categoryDto1 = categoryService.update(categoryDto, categoryId);
         logger.info("new image name: {}", categoryDto1.getCoverImage());
 
@@ -172,6 +196,8 @@ public class CategoryController {
                 .httpStatus(AppConstants.HTTP_STATUS)
                 .success(AppConstants.IMAGE_UPLOAD_SUCCESS)
                 .build();
+        logger.info("Cover image updated successfully");
+
         return  new ResponseEntity<>(imageResponse, HttpStatus.CREATED);
 
     }
@@ -192,12 +218,16 @@ public class CategoryController {
             HttpServletResponse response
     ) throws IOException {
 
+        logger.info("Entering serveCoverImage method");
         CategoryDto categoryDto = categoryService.get(categoryId);
         logger.info("category image name ; {}" , categoryDto.getCoverImage());
+
+        logger.info("Sending request to FileService for serving image with categoryId: {}", categoryId);
         InputStream resource = fileService.getResource(imageUploadPath, categoryDto.getCoverImage());
 
         response.setContentType(MediaType.IMAGE_JPEG_VALUE);
         StreamUtils.copy(resource, response.getOutputStream());
+        logger.info("Exiting serveCoverImage method");
 
     }
 
