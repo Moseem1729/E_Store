@@ -16,6 +16,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -33,8 +34,11 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public ProductDto create(ProductDto productDto) {
         String productId = UUID.randomUUID().toString();
-        productDto.setProductId(productId);
-        Product savedProduct = productRepository.save(modelMapper.map(productDto, Product.class));
+        Product product = modelMapper.map(productDto, Product.class);
+        product.setProductId(productId);
+        product.setAddedDate(new Date());
+
+        Product savedProduct = productRepository.save(product);
         return modelMapper.map(savedProduct, ProductDto.class);
     }
 
