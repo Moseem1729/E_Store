@@ -3,10 +3,12 @@ package com.lcwd.electronic.store.controllers;
 import com.lcwd.electronic.store.config.AppConstants;
 import com.lcwd.electronic.store.dtos.CategoryDto;
 import com.lcwd.electronic.store.dtos.PageableResponse;
+import com.lcwd.electronic.store.dtos.ProductDto;
 import com.lcwd.electronic.store.payload.ApiResponse;
 import com.lcwd.electronic.store.payload.ImageResponse;
 import com.lcwd.electronic.store.services.CategoryService;
 import com.lcwd.electronic.store.services.FileService;
+import com.lcwd.electronic.store.services.ProductService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,8 +38,10 @@ public class CategoryController {
     @Value("${user.profile.image.path}")
     private String imageUploadPath;
 
+    @Autowired
+    private ProductService productService;
+
     /**
-     *
      * @param categoryDto
      * @return ResponseEntity<CategoryDto>
      * @author Moseem Pathan
@@ -54,7 +58,6 @@ public class CategoryController {
     }
 
     /**
-     *
      * @param categoryDto
      * @param catId
      * @return ResponseEntity<CategoryDto>
@@ -74,7 +77,6 @@ public class CategoryController {
     }
 
     /**
-     *
      * @param catId
      * @return ResponseEntity<ApiResponse>
      * @author Moseem Pathan
@@ -93,12 +95,11 @@ public class CategoryController {
     }
 
     /**
-     *
      * @param pageNO
      * @param pageSize
      * @param sortBy
      * @param sortDir
-     * @return ResponseEntity<PageableResponse<CategoryDto>>
+     * @return ResponseEntity<PageableResponse < CategoryDto>>
      * @author Moseem Pathan
      * @apiNote get all categories pageable
      */
@@ -118,7 +119,6 @@ public class CategoryController {
     }
 
     /**
-     *
      * @param catId
      * @return ResponseEntity<CategoryDto>
      * @author Moseem Pathan
@@ -135,13 +135,12 @@ public class CategoryController {
     }
 
     /**
-     *
      * @param keyword
      * @param pageNO
      * @param pageSize
      * @param sortBy
      * @param sortDir
-     * @return ResponseEntity<PageableResponse<CategoryDto>>
+     * @return ResponseEntity<PageableResponse < CategoryDto>>
      * @author Moseem Pathan
      * @apiNote search category title by keyword
      */
@@ -152,7 +151,7 @@ public class CategoryController {
             @RequestParam(defaultValue = AppConstants.PAGE_SIZE, required = false) int pageSize,
             @RequestParam(defaultValue = AppConstants.SORT_BY_TITLE, required = false) String sortBy,
             @RequestParam(defaultValue = AppConstants.SORT_DIR, required = false) String sortDir
-    ){
+    ) {
         logger.info("Sending request to service for retrieve Categories by keyword: {}", keyword);
 
         PageableResponse<CategoryDto> pageableResponse = categoryService.search(keyword, pageNO, pageSize, sortBy, sortDir);
@@ -164,7 +163,6 @@ public class CategoryController {
     //upload categoryCover image
 
     /**
-     *
      * @param image
      * @param categoryId
      * @return ResponseEntity<ImageResponse>
@@ -198,14 +196,13 @@ public class CategoryController {
                 .build();
         logger.info("Cover image updated successfully");
 
-        return  new ResponseEntity<>(imageResponse, HttpStatus.CREATED);
+        return new ResponseEntity<>(imageResponse, HttpStatus.CREATED);
 
     }
 
     //serve coverImage
 
     /**
-     *
      * @param categoryId
      * @param response
      * @throws IOException
@@ -220,7 +217,7 @@ public class CategoryController {
 
         logger.info("Entering serveCoverImage method");
         CategoryDto categoryDto = categoryService.get(categoryId);
-        logger.info("category image name ; {}" , categoryDto.getCoverImage());
+        logger.info("category image name ; {}", categoryDto.getCoverImage());
 
         logger.info("Sending request to FileService for serving image with categoryId: {}", categoryId);
         InputStream resource = fileService.getResource(imageUploadPath, categoryDto.getCoverImage());
@@ -229,6 +226,41 @@ public class CategoryController {
         StreamUtils.copy(resource, response.getOutputStream());
         logger.info("Exiting serveCoverImage method");
 
+    }
+
+    //create product with category
+    @PostMapping("/{categoryId}/products")
+    public ResponseEntity<ProductDto> createProductWithCategory(
+            @PathVariable("categoryId") String categoryId,
+            @RequestBody ProductDto productDto
+    ) {
+        ProductDto withCategory = productService.createWithCategory(productDto, categoryId);
+        System.err.println(withCategory.getCategory().getTitle());
+        return new ResponseEntity<>(withCategory, HttpStatus.CREATED);
+    }
+
+    //update category of product
+    @PutMapping("/{categoryId}/products/{productId}")
+    public ResponseEntity<ProductDto> updateCategoryOfProduct(
+            @PathVariable String categoryId,
+            @PathVariable String productId
+    ) {
+        ProductDto productDto = productService.updateCategory(productId, categoryId);
+        return new ResponseEntity<>(productDto, HttpStatus.ACCEPTED);
+    }
+
+    //get all product with category
+    @GetMapping("/{categoryId}/products")
+    public ResponseEntity<PageableResponse<ProductDto>> getProductsOfCategory(
+            @PathVariable String categoryId,
+            @RequestParam(defaultValue = AppConstants.PAGE_NUMBER, required = false) int pageNO,
+            @RequestParam(defaultValue = AppConstants.PAGE_SIZE, required = false) int pageSize,
+            @RequestParam(defaultValue = AppConstants.SORT_BY_TITLE, required = false) String sortBy,
+            @RequestParam(defaultValue = AppConstants.SORT_DIR, required = false) String sortDir
+
+    ){
+        PageableResponse<ProductDto> allOfCategory = productService.getAllOfCategory(categoryId, pageNO, pageSize, sortBy, sortDir);//ctrl+shift+space for getting all matching parameters
+        return new ResponseEntity<>(allOfCategory, HttpStatus.OK);
     }
 
 }
