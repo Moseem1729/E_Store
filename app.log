@@ -6628,3 +6628,775 @@ Caused by: java.io.IOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Loc
 08:04 22:59:25.106 [http-nio-9090-exec-1] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring DispatcherServlet 'dispatcherServlet'
 08:04 22:59:25.108 [http-nio-9090-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] -Initializing Servlet 'dispatcherServlet'
 08:04 22:59:25.112 [http-nio-9090-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] -Completed initialization in 4 ms
+08:04 23:59:45.906 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+08:04 23:59:45.916 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+08:04 23:59:45.923 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+08:05 00:20:44.779 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+08:05 00:20:44.794 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 28192 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+08:05 00:20:44.795 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+08:05 00:20:44.883 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+08:05 00:20:44.883 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+08:05 00:20:46.104 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+08:05 00:20:46.203 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 89 ms. Found 3 JPA repository interfaces.
+08:05 00:20:47.205 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 9090 (http)
+08:05 00:20:47.216 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-9090"]
+08:05 00:20:47.218 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+08:05 00:20:47.219 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+08:05 00:20:47.324 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+08:05 00:20:47.324 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 2439 ms
+08:05 00:20:47.542 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+08:05 00:20:47.623 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+08:05 00:20:47.872 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08:05 00:20:47.992 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+08:05 00:20:48.538 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+08:05 00:20:48.573 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+08:05 00:26:08.022 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08:05 00:26:08.034 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:05 00:26:08.689 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08:05 00:26:09.129 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+08:05 00:26:09.182 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 9090 (http) with context path ''
+08:05 00:26:09.192 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 324.921 seconds (JVM running for 325.973)
+08:05 00:26:09.213 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+08:05 00:26:09.217 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+08:05 00:26:09.227 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+08:05 00:26:12.179 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+08:05 00:26:12.195 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 11460 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+08:05 00:26:12.196 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+08:05 00:26:12.255 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+08:05 00:26:12.255 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+08:05 00:26:13.305 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+08:05 00:26:13.400 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 83 ms. Found 3 JPA repository interfaces.
+08:05 00:26:14.396 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 9090 (http)
+08:05 00:26:14.409 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-9090"]
+08:05 00:26:14.412 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+08:05 00:26:14.412 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+08:05 00:26:14.508 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+08:05 00:26:14.508 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 2252 ms
+08:05 00:26:14.732 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+08:05 00:26:14.805 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+08:05 00:26:15.026 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08:05 00:26:15.143 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+08:05 00:26:15.500 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+08:05 00:26:15.521 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+08:05 00:26:16.612 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08:05 00:26:16.627 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:05 00:26:17.533 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08:05 00:26:17.957 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+08:05 00:26:17.972 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-9090"]
+08:05 00:26:17.996 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 9090 (http) with context path ''
+08:05 00:26:18.008 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 6.303 seconds (JVM running for 7.176)
+08:05 00:32:09.719 [http-nio-9090-exec-2] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+08:05 00:32:09.721 [http-nio-9090-exec-2] [INFO] [o.s.web.servlet.DispatcherServlet] -Initializing Servlet 'dispatcherServlet'
+08:05 00:32:09.723 [http-nio-9090-exec-2] [INFO] [o.s.web.servlet.DispatcherServlet] -Completed initialization in 1 ms
+08:05 00:32:09.829 [http-nio-9090-exec-2] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -Entering uploadImage method
+08:05 00:32:09.830 [http-nio-9090-exec-2] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -originalFilename: [CooL GuY] {{a2zRG}} (31)~01.JPG
+08:05 00:32:09.830 [http-nio-9090-exec-2] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -Randomly generated fileName: d5995889-d65b-45fe-893d-73ada2241a77
+08:05 00:32:09.831 [http-nio-9090-exec-2] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -fileNameWithExtension: d5995889-d65b-45fe-893d-73ada2241a77.JPG
+08:05 00:32:09.832 [http-nio-9090-exec-2] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -fullPathWithFileName: images/products/d5995889-d65b-45fe-893d-73ada2241a77.JPG
+08:05 00:32:09.835 [http-nio-9090-exec-2] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -Exiting uploadImage method
+08:05 00:36:55.852 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+08:05 00:36:55.861 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+08:05 00:36:55.869 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+08:05 00:37:02.025 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+08:05 00:37:02.036 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 1040 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+08:05 00:37:02.037 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+08:05 00:37:02.099 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+08:05 00:37:02.099 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+08:05 00:37:03.003 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+08:05 00:37:03.089 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 76 ms. Found 3 JPA repository interfaces.
+08:05 00:37:04.033 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 9090 (http)
+08:05 00:37:04.042 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-9090"]
+08:05 00:37:04.044 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+08:05 00:37:04.044 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+08:05 00:37:04.133 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+08:05 00:37:04.133 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 2033 ms
+08:05 00:37:04.341 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+08:05 00:37:04.412 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+08:05 00:37:04.609 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08:05 00:37:04.745 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+08:05 00:37:05.084 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+08:05 00:37:05.098 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+08:05 00:37:05.851 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08:05 00:37:05.861 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:05 00:37:06.540 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08:05 00:37:07.079 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+08:05 00:37:07.096 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-9090"]
+08:05 00:37:07.123 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 9090 (http) with context path ''
+08:05 00:37:07.134 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 5.529 seconds (JVM running for 6.329)
+08:05 00:37:47.297 [http-nio-9090-exec-2] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+08:05 00:37:47.297 [http-nio-9090-exec-2] [INFO] [o.s.web.servlet.DispatcherServlet] -Initializing Servlet 'dispatcherServlet'
+08:05 00:37:47.298 [http-nio-9090-exec-2] [INFO] [o.s.web.servlet.DispatcherServlet] -Completed initialization in 1 ms
+08:05 00:38:29.096 [http-nio-9090-exec-3] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -Entering uploadImage method
+08:05 00:38:29.097 [http-nio-9090-exec-3] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -originalFilename: [CooL GuY] {{a2zRG}} (31)~01.JPG
+08:05 00:38:29.098 [http-nio-9090-exec-3] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -Randomly generated fileName: dac6398e-95a5-4bec-a7c6-8c11543445db
+08:05 00:38:29.098 [http-nio-9090-exec-3] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -fileNameWithExtension: dac6398e-95a5-4bec-a7c6-8c11543445db.JPG
+08:05 00:38:29.098 [http-nio-9090-exec-3] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -fullPathWithFileName: images/products/dac6398e-95a5-4bec-a7c6-8c11543445db.JPG
+08:05 00:38:29.100 [http-nio-9090-exec-3] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -Exiting uploadImage method
+08:05 00:38:29.175 [http-nio-9090-exec-3] [WARN] [o.s.w.m.s.StandardServletMultipartResolver] -Failed to perform cleanup of multipart items
+java.io.UncheckedIOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.2747485473208321238\work\Tomcat\localhost\ROOT\upload_da4a46b0_dd84_4fe1_b9dc_b5f5aa52e749_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.cleanupMultipart(StandardServletMultipartResolver.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.cleanupMultipart(DispatcherServlet.java:1251)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1108)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.2747485473208321238\work\Tomcat\localhost\ROOT\upload_da4a46b0_dd84_4fe1_b9dc_b5f5aa52e749_00000000.tmp
+	... 44 common frames omitted
+08:05 00:38:29.176 [http-nio-9090-exec-3] [ERROR] [o.a.coyote.http11.Http11Processor] -Error processing request
+java.io.UncheckedIOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.2747485473208321238\work\Tomcat\localhost\ROOT\upload_da4a46b0_dd84_4fe1_b9dc_b5f5aa52e749_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:474)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.2747485473208321238\work\Tomcat\localhost\ROOT\upload_da4a46b0_dd84_4fe1_b9dc_b5f5aa52e749_00000000.tmp
+	... 13 common frames omitted
+08:05 00:38:29.178 [http-nio-9090-exec-3] [ERROR] [o.a.coyote.http11.Http11NioProtocol] -Error reading request, ignored
+java.io.UncheckedIOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.2747485473208321238\work\Tomcat\localhost\ROOT\upload_da4a46b0_dd84_4fe1_b9dc_b5f5aa52e749_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:474)
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:420)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.2747485473208321238\work\Tomcat\localhost\ROOT\upload_da4a46b0_dd84_4fe1_b9dc_b5f5aa52e749_00000000.tmp
+	... 13 common frames omitted
+08:05 00:38:29.178 [http-nio-9090-exec-3] [ERROR] [o.apache.tomcat.util.net.NioEndpoint] -Error running socket processor
+java.io.UncheckedIOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.2747485473208321238\work\Tomcat\localhost\ROOT\upload_da4a46b0_dd84_4fe1_b9dc_b5f5aa52e749_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:474)
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
+	at org.apache.catalina.connector.CoyoteAdapter.checkRecycled(CoyoteAdapter.java:517)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1417)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1129)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1090)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.2747485473208321238\work\Tomcat\localhost\ROOT\upload_da4a46b0_dd84_4fe1_b9dc_b5f5aa52e749_00000000.tmp
+	... 14 common frames omitted
+08:05 00:48:05.573 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+08:05 00:48:05.580 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+08:05 00:48:05.591 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+08:05 00:48:10.206 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+08:05 00:48:10.219 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 27548 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+08:05 00:48:10.221 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+08:05 00:48:10.281 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+08:05 00:48:10.281 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+08:05 00:48:11.167 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+08:05 00:48:11.254 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 73 ms. Found 3 JPA repository interfaces.
+08:05 00:48:12.198 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 9090 (http)
+08:05 00:48:12.206 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-9090"]
+08:05 00:48:12.211 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+08:05 00:48:12.211 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+08:05 00:48:12.296 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+08:05 00:48:12.296 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 2014 ms
+08:05 00:48:12.491 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+08:05 00:48:12.569 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+08:05 00:48:12.770 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08:05 00:48:12.897 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+08:05 00:48:13.231 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+08:05 00:48:13.245 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+08:05 00:48:14.155 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08:05 00:48:14.164 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:05 00:48:14.792 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08:05 00:48:15.209 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+08:05 00:48:15.225 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-9090"]
+08:05 00:48:15.249 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 9090 (http) with context path ''
+08:05 00:48:15.260 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 5.488 seconds (JVM running for 6.301)
+08:05 00:48:57.415 [http-nio-9090-exec-2] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+08:05 00:48:57.415 [http-nio-9090-exec-2] [INFO] [o.s.web.servlet.DispatcherServlet] -Initializing Servlet 'dispatcherServlet'
+08:05 00:48:57.417 [http-nio-9090-exec-2] [INFO] [o.s.web.servlet.DispatcherServlet] -Completed initialization in 2 ms
+08:05 00:48:57.493 [http-nio-9090-exec-2] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -Entering uploadImage method
+08:05 00:48:57.493 [http-nio-9090-exec-2] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -originalFilename: [CooL GuY] {{a2zRG}} (31)~01.JPG
+08:05 00:48:57.494 [http-nio-9090-exec-2] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -Randomly generated fileName: 339cd518-1caf-4698-a8f3-2ca3ceb40708
+08:05 00:48:57.495 [http-nio-9090-exec-2] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -fileNameWithExtension: 339cd518-1caf-4698-a8f3-2ca3ceb40708.JPG
+08:05 00:48:57.495 [http-nio-9090-exec-2] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -fullPathWithFileName: images/products/339cd518-1caf-4698-a8f3-2ca3ceb40708.JPG
+08:05 00:48:57.498 [http-nio-9090-exec-2] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -Exiting uploadImage method
+08:05 00:48:57.711 [http-nio-9090-exec-2] [WARN] [o.s.w.m.s.StandardServletMultipartResolver] -Failed to perform cleanup of multipart items
+java.io.UncheckedIOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.2648888592996900708\work\Tomcat\localhost\ROOT\upload_6e663e82_8cde_4225_9eca_7b0f633dd31a_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.cleanupMultipart(StandardServletMultipartResolver.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.cleanupMultipart(DispatcherServlet.java:1251)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1108)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.2648888592996900708\work\Tomcat\localhost\ROOT\upload_6e663e82_8cde_4225_9eca_7b0f633dd31a_00000000.tmp
+	... 44 common frames omitted
+08:05 00:48:57.715 [http-nio-9090-exec-2] [ERROR] [o.a.coyote.http11.Http11Processor] -Error processing request
+java.io.UncheckedIOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.2648888592996900708\work\Tomcat\localhost\ROOT\upload_6e663e82_8cde_4225_9eca_7b0f633dd31a_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:474)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.2648888592996900708\work\Tomcat\localhost\ROOT\upload_6e663e82_8cde_4225_9eca_7b0f633dd31a_00000000.tmp
+	... 13 common frames omitted
+08:05 00:48:57.720 [http-nio-9090-exec-2] [ERROR] [o.a.coyote.http11.Http11NioProtocol] -Error reading request, ignored
+java.io.UncheckedIOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.2648888592996900708\work\Tomcat\localhost\ROOT\upload_6e663e82_8cde_4225_9eca_7b0f633dd31a_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:474)
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:420)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.2648888592996900708\work\Tomcat\localhost\ROOT\upload_6e663e82_8cde_4225_9eca_7b0f633dd31a_00000000.tmp
+	... 13 common frames omitted
+08:05 00:48:57.722 [http-nio-9090-exec-2] [ERROR] [o.apache.tomcat.util.net.NioEndpoint] -Error running socket processor
+java.io.UncheckedIOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.2648888592996900708\work\Tomcat\localhost\ROOT\upload_6e663e82_8cde_4225_9eca_7b0f633dd31a_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:474)
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
+	at org.apache.catalina.connector.CoyoteAdapter.checkRecycled(CoyoteAdapter.java:517)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1417)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1129)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1090)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.2648888592996900708\work\Tomcat\localhost\ROOT\upload_6e663e82_8cde_4225_9eca_7b0f633dd31a_00000000.tmp
+	... 14 common frames omitted
+08:05 00:50:24.052 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+08:05 00:50:24.059 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+08:05 00:50:24.071 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+08:05 00:50:29.831 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+08:05 00:50:29.842 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 28836 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+08:05 00:50:29.843 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+08:05 00:50:29.925 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+08:05 00:50:29.926 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+08:05 00:50:30.885 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+08:05 00:50:30.983 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 79 ms. Found 3 JPA repository interfaces.
+08:05 00:50:32.006 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 9090 (http)
+08:05 00:50:32.020 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-9090"]
+08:05 00:50:32.024 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+08:05 00:50:32.024 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+08:05 00:50:32.125 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+08:05 00:50:32.126 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 2199 ms
+08:05 00:50:32.345 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+08:05 00:50:32.413 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+08:05 00:50:32.678 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08:05 00:50:32.790 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+08:05 00:50:33.187 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+08:05 00:50:33.208 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+08:05 00:50:34.131 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08:05 00:50:34.142 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:05 00:50:34.849 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08:05 00:50:35.319 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+08:05 00:50:35.337 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-9090"]
+08:05 00:50:35.371 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 9090 (http) with context path ''
+08:05 00:50:35.381 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 6.103 seconds (JVM running for 7.13)
+08:05 00:51:19.894 [http-nio-9090-exec-1] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+08:05 00:51:19.896 [http-nio-9090-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] -Initializing Servlet 'dispatcherServlet'
+08:05 00:51:19.897 [http-nio-9090-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] -Completed initialization in 1 ms
+08:05 00:51:20.039 [http-nio-9090-exec-1] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -Entering uploadImage method
+08:05 00:51:20.039 [http-nio-9090-exec-1] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -originalFilename: unnamed (33).jpg
+08:05 00:51:20.040 [http-nio-9090-exec-1] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -Randomly generated fileName: 311039eb-393f-4e41-b417-4ed5c7ab425c
+08:05 00:51:20.041 [http-nio-9090-exec-1] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -fileNameWithExtension: 311039eb-393f-4e41-b417-4ed5c7ab425c.jpg
+08:05 00:51:20.042 [http-nio-9090-exec-1] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -fullPathWithFileName: images/products/311039eb-393f-4e41-b417-4ed5c7ab425c.jpg
+08:05 00:51:20.050 [http-nio-9090-exec-1] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -Exiting uploadImage method
+08:05 00:51:20.339 [http-nio-9090-exec-1] [WARN] [o.s.w.m.s.StandardServletMultipartResolver] -Failed to perform cleanup of multipart items
+java.io.UncheckedIOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.14247879582335989531\work\Tomcat\localhost\ROOT\upload_e0534683_24d1_4789_9c9e_9868be5d6b8b_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.springframework.web.multipart.support.StandardServletMultipartResolver.cleanupMultipart(StandardServletMultipartResolver.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.cleanupMultipart(DispatcherServlet.java:1251)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1108)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.14247879582335989531\work\Tomcat\localhost\ROOT\upload_e0534683_24d1_4789_9c9e_9868be5d6b8b_00000000.tmp
+	... 44 common frames omitted
+08:05 00:51:20.342 [http-nio-9090-exec-1] [ERROR] [o.a.coyote.http11.Http11Processor] -Error processing request
+java.io.UncheckedIOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.14247879582335989531\work\Tomcat\localhost\ROOT\upload_e0534683_24d1_4789_9c9e_9868be5d6b8b_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:474)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.14247879582335989531\work\Tomcat\localhost\ROOT\upload_e0534683_24d1_4789_9c9e_9868be5d6b8b_00000000.tmp
+	... 13 common frames omitted
+08:05 00:51:20.343 [http-nio-9090-exec-1] [ERROR] [o.a.coyote.http11.Http11NioProtocol] -Error reading request, ignored
+java.io.UncheckedIOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.14247879582335989531\work\Tomcat\localhost\ROOT\upload_e0534683_24d1_4789_9c9e_9868be5d6b8b_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:474)
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:420)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.14247879582335989531\work\Tomcat\localhost\ROOT\upload_e0534683_24d1_4789_9c9e_9868be5d6b8b_00000000.tmp
+	... 13 common frames omitted
+08:05 00:51:20.344 [http-nio-9090-exec-1] [ERROR] [o.apache.tomcat.util.net.NioEndpoint] -Error running socket processor
+java.io.UncheckedIOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.14247879582335989531\work\Tomcat\localhost\ROOT\upload_e0534683_24d1_4789_9c9e_9868be5d6b8b_00000000.tmp
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
+	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
+	at org.apache.catalina.connector.Request.recycle(Request.java:474)
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
+	at org.apache.catalina.connector.CoyoteAdapter.checkRecycled(CoyoteAdapter.java:517)
+	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1417)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1129)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1090)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Cannot delete C:\Users\DELL LATITUDE\AppData\Local\Temp\tomcat.9090.14247879582335989531\work\Tomcat\localhost\ROOT\upload_e0534683_24d1_4789_9c9e_9868be5d6b8b_00000000.tmp
+	... 14 common frames omitted
+08:05 00:54:17.698 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+08:05 00:54:17.704 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+08:05 00:54:17.713 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+08:05 00:54:22.410 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+08:05 00:54:22.421 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 1120 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+08:05 00:54:22.422 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+08:05 00:54:22.481 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+08:05 00:54:22.482 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+08:05 00:54:23.327 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+08:05 00:54:23.417 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 74 ms. Found 3 JPA repository interfaces.
+08:05 00:54:24.260 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 9090 (http)
+08:05 00:54:24.270 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-9090"]
+08:05 00:54:24.273 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+08:05 00:54:24.274 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+08:05 00:54:24.362 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+08:05 00:54:24.362 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 1880 ms
+08:05 00:54:24.611 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+08:05 00:54:24.696 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+08:05 00:54:24.896 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08:05 00:54:24.999 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+08:05 00:54:25.330 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+08:05 00:54:25.348 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+08:05 00:54:26.203 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08:05 00:54:26.211 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:05 00:54:26.840 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08:05 00:54:27.295 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+08:05 00:54:27.311 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-9090"]
+08:05 00:54:27.331 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 9090 (http) with context path ''
+08:05 00:54:27.342 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 5.354 seconds (JVM running for 6.112)
+08:05 00:58:29.473 [http-nio-9090-exec-1] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+08:05 00:58:29.476 [http-nio-9090-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] -Initializing Servlet 'dispatcherServlet'
+08:05 00:58:29.478 [http-nio-9090-exec-1] [INFO] [o.s.web.servlet.DispatcherServlet] -Completed initialization in 1 ms
+08:05 00:59:57.917 [http-nio-9090-exec-5] [INFO] [c.l.e.s.c.ProductController] -Sending request to FileService for serving image with id: 5222df6b-5854-4ac2-9e4f-4d0ad429a924
+08:05 00:59:57.940 [http-nio-9090-exec-5] [INFO] [c.l.e.s.c.ProductController] -product image name ; 311039eb-393f-4e41-b417-4ed5c7ab425c.jpg
+08:05 00:59:57.940 [http-nio-9090-exec-5] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -Entering getResource method
+08:05 00:59:57.940 [http-nio-9090-exec-5] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -fullPath: images/products/\311039eb-393f-4e41-b417-4ed5c7ab425c.jpg
+08:05 00:59:57.941 [http-nio-9090-exec-5] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -Exiting getResource method
+08:05 00:59:57.941 [http-nio-9090-exec-5] [INFO] [c.l.e.s.c.ProductController] -Successfully served image with name: 311039eb-393f-4e41-b417-4ed5c7ab425c.jpg
+08:05 01:01:10.624 [http-nio-9090-exec-6] [INFO] [c.l.e.s.c.ProductController] -Sending request to FileService for serving image with id: 5222df6b-5854-4ac2-9e4f-4d0ad429a924
+08:05 01:01:10.634 [http-nio-9090-exec-6] [INFO] [c.l.e.s.c.ProductController] -product image name ; 311039eb-393f-4e41-b417-4ed5c7ab425c.jpg
+08:05 01:01:10.634 [http-nio-9090-exec-6] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -Entering getResource method
+08:05 01:01:10.635 [http-nio-9090-exec-6] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -fullPath: images/products/\311039eb-393f-4e41-b417-4ed5c7ab425c.jpg
+08:05 01:01:10.635 [http-nio-9090-exec-6] [INFO] [c.l.e.s.s.impl.FileServiceImpl] -Exiting getResource method
+08:05 01:01:10.635 [http-nio-9090-exec-6] [INFO] [c.l.e.s.c.ProductController] -Successfully served image with name: 311039eb-393f-4e41-b417-4ed5c7ab425c.jpg
+08:05 01:11:52.146 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+08:05 01:11:52.156 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+08:05 01:11:52.171 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+08:05 01:25:49.069 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+08:05 01:25:49.081 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 18076 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+08:05 01:25:49.082 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+08:05 01:25:49.161 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+08:05 01:25:49.161 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+08:05 01:25:50.209 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+08:05 01:25:50.295 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 76 ms. Found 3 JPA repository interfaces.
+08:05 01:25:51.295 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 9090 (http)
+08:05 01:25:51.308 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-9090"]
+08:05 01:25:51.310 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+08:05 01:25:51.310 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+08:05 01:25:51.437 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+08:05 01:25:51.437 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 2275 ms
+08:05 01:25:51.664 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+08:05 01:25:51.734 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+08:05 01:25:51.969 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08:05 01:25:52.090 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+08:05 01:25:52.614 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+08:05 01:25:52.643 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+08:05 01:25:52.936 [restartedMain] [ERROR] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Failed to initialize JPA EntityManagerFactory: Table [products] contains physical column name [product_id] referred to by multiple logical column names: [product_id], [productId]
+08:05 01:25:52.938 [restartedMain] [WARN] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.DuplicateMappingException: Table [products] contains physical column name [product_id] referred to by multiple logical column names: [product_id], [productId]
+08:05 01:25:52.941 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+08:05 01:25:52.952 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+08:05 01:25:52.955 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Stopping service [Tomcat]
+08:05 01:25:52.969 [restartedMain] [INFO] [o.s.b.a.l.ConditionEvaluationReportLoggingListener] -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+08:05 01:25:53.008 [restartedMain] [ERROR] [o.s.boot.SpringApplication] -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.DuplicateMappingException: Table [products] contains physical column name [product_id] referred to by multiple logical column names: [product_id], [productId]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:910)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.lcwd.electronic.store.ElectronicStoreApplication.main(ElectronicStoreApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.hibernate.DuplicateMappingException: Table [products] contains physical column name [product_id] referred to by multiple logical column names: [product_id], [productId]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl$TableColumnNameBinding.bindPhysicalToLogical(InFlightMetadataCollectorImpl.java:937)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl$TableColumnNameBinding.addBinding(InFlightMetadataCollectorImpl.java:906)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.addColumnNameBinding(InFlightMetadataCollectorImpl.java:976)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.addColumnNameBinding(InFlightMetadataCollectorImpl.java:957)
+	at org.hibernate.cfg.Ejb3JoinColumn.addColumnBinding(Ejb3JoinColumn.java:799)
+	at org.hibernate.cfg.Ejb3Column.linkWithValue(Ejb3Column.java:385)
+	at org.hibernate.cfg.annotations.TableBinder.linkJoinColumnWithValueOverridingNameIfImplicit(TableBinder.java:720)
+	at org.hibernate.cfg.annotations.TableBinder.bindFk(TableBinder.java:649)
+	at org.hibernate.cfg.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:105)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1750)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1694)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1623)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:295)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 21 common frames omitted
+08:05 01:26:32.756 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+08:05 01:26:32.759 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 18288 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+08:05 01:26:32.763 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+08:05 01:26:32.827 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+08:05 01:26:32.827 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+08:05 01:26:33.757 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+08:05 01:26:33.842 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 73 ms. Found 3 JPA repository interfaces.
+08:05 01:26:34.736 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 9090 (http)
+08:05 01:26:34.747 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-9090"]
+08:05 01:26:34.749 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+08:05 01:26:34.749 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+08:05 01:26:34.845 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+08:05 01:26:34.845 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 2017 ms
+08:05 01:26:35.052 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+08:05 01:26:35.121 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+08:05 01:26:35.337 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08:05 01:26:35.476 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+08:05 01:26:35.861 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+08:05 01:26:35.879 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+08:05 01:26:50.081 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08:05 01:26:50.096 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:05 01:26:50.812 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08:05 01:26:51.247 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+08:05 01:26:51.268 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-9090"]
+08:05 01:26:51.298 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 9090 (http) with context path ''
+08:05 01:26:51.308 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 19.034 seconds (JVM running for 19.891)
+08:05 01:28:05.499 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+08:05 01:28:05.503 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+08:05 01:28:05.515 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+08:05 01:28:10.651 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+08:05 01:28:10.659 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-34FIR0Q with PID 19216 (C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store\target\classes started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+08:05 01:28:10.660 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -No active profile set, falling back to 1 default profile: "default"
+08:05 01:28:10.723 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+08:05 01:28:10.724 [restartedMain] [INFO] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+08:05 01:28:11.771 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+08:05 01:28:11.886 [restartedMain] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 94 ms. Found 3 JPA repository interfaces.
+08:05 01:28:12.850 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat initialized with port(s): 9090 (http)
+08:05 01:28:12.861 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Initializing ProtocolHandler ["http-nio-9090"]
+08:05 01:28:12.865 [restartedMain] [INFO] [o.a.catalina.core.StandardService] -Starting service [Tomcat]
+08:05 01:28:12.865 [restartedMain] [INFO] [o.a.catalina.core.StandardEngine] -Starting Servlet engine: [Apache Tomcat/9.0.76]
+08:05 01:28:12.973 [restartedMain] [INFO] [o.a.c.c.C.[Tomcat].[localhost].[/]] -Initializing Spring embedded WebApplicationContext
+08:05 01:28:12.973 [restartedMain] [INFO] [o.s.b.w.s.c.ServletWebServerApplicationContext] -Root WebApplicationContext: initialization completed in 2248 ms
+08:05 01:28:13.209 [restartedMain] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+08:05 01:28:13.280 [restartedMain] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+08:05 01:28:13.498 [restartedMain] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08:05 01:28:13.644 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+08:05 01:28:14.070 [restartedMain] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+08:05 01:28:14.084 [restartedMain] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+08:05 01:28:28.374 [restartedMain] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08:05 01:28:28.386 [restartedMain] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:05 01:28:29.094 [restartedMain] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08:05 01:28:29.557 [restartedMain] [INFO] [o.s.b.d.a.OptionalLiveReloadServer] -LiveReload server is running on port 35729
+08:05 01:28:29.573 [restartedMain] [INFO] [o.a.coyote.http11.Http11NioProtocol] -Starting ProtocolHandler ["http-nio-9090"]
+08:05 01:28:29.599 [restartedMain] [INFO] [o.s.b.w.e.tomcat.TomcatWebServer] -Tomcat started on port(s): 9090 (http) with context path ''
+08:05 01:28:29.608 [restartedMain] [INFO] [c.l.e.s.ElectronicStoreApplication] -Started ElectronicStoreApplication in 19.459 seconds (JVM running for 20.33)
+08:05 01:31:41.881 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+08:05 01:31:41.887 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+08:05 01:31:41.900 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+08:05 11:17:59.442 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.lcwd.electronic.store.controllers.CategoryControllerTest], using SpringBootContextLoader
+08:05 11:17:59.464 [main] [INFO] [o.s.t.c.s.AbstractContextLoader] -Could not detect default resource locations for test class [com.lcwd.electronic.store.controllers.CategoryControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+08:05 11:17:59.465 [main] [INFO] [o.s.t.c.s.AnnotationConfigContextLoaderUtils] -Could not detect default configuration classes for test class [com.lcwd.electronic.store.controllers.CategoryControllerTest]: CategoryControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+08:05 11:17:59.794 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] -Found @SpringBootConfiguration com.lcwd.electronic.store.ElectronicStoreApplication for test class com.lcwd.electronic.store.controllers.CategoryControllerTest
+08:05 11:18:00.046 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+08:05 11:18:00.091 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@19553973, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7bb6ab3a, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7fe7c640, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4c4748bf, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7ce97ee5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@32c8e539, org.springframework.test.context.transaction.TransactionalTestExecutionListener@73dce0e6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5a85c92, org.springframework.test.context.event.EventPublishingTestExecutionListener@32811494, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4795ded0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@53dacd14, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@14d14731, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2eced48b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@47c4ecdc, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@42f33b5d]
+08:05 11:18:00.762 [main] [INFO] [c.l.e.s.c.CategoryControllerTest] -Starting CategoryControllerTest using Java 17.0.5 on DESKTOP-34FIR0Q with PID 21496 (started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+08:05 11:18:00.763 [main] [INFO] [c.l.e.s.c.CategoryControllerTest] -No active profile set, falling back to 1 default profile: "default"
+08:05 11:18:00.766 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+08:05 11:18:02.065 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+08:05 11:18:02.213 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 127 ms. Found 3 JPA repository interfaces.
+08:05 11:18:04.442 [main] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+08:05 11:18:04.571 [main] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+08:05 11:18:04.660 [main] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08:05 11:18:05.004 [main] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+08:05 11:18:06.007 [main] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+08:05 11:18:06.048 [main] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+08:05 11:18:07.206 [main] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08:05 11:18:07.225 [main] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:05 11:18:08.595 [main] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08:05 11:18:09.914 [main] [INFO] [o.s.b.t.m.w.SpringBootMockServletContext] -Initializing Spring TestDispatcherServlet ''
+08:05 11:18:09.914 [main] [INFO] [o.s.t.w.s.TestDispatcherServlet] -Initializing Servlet ''
+08:05 11:18:09.916 [main] [INFO] [o.s.t.w.s.TestDispatcherServlet] -Completed initialization in 2 ms
+08:05 11:18:09.948 [main] [INFO] [c.l.e.s.c.CategoryControllerTest] -Started CategoryControllerTest in 9.749 seconds (JVM running for 12.406)
+08:05 11:18:10.250 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+08:05 11:18:10.252 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+08:05 11:18:10.264 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+08:05 11:19:45.910 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.lcwd.electronic.store.controllers.CategoryControllerTest], using SpringBootContextLoader
+08:05 11:19:45.926 [main] [INFO] [o.s.t.c.s.AbstractContextLoader] -Could not detect default resource locations for test class [com.lcwd.electronic.store.controllers.CategoryControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+08:05 11:19:45.928 [main] [INFO] [o.s.t.c.s.AnnotationConfigContextLoaderUtils] -Could not detect default configuration classes for test class [com.lcwd.electronic.store.controllers.CategoryControllerTest]: CategoryControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+08:05 11:19:46.168 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] -Found @SpringBootConfiguration com.lcwd.electronic.store.ElectronicStoreApplication for test class com.lcwd.electronic.store.controllers.CategoryControllerTest
+08:05 11:19:46.329 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+08:05 11:19:46.360 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@781f10f2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2a79d4b1, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2e9fda69, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@17cdf2d0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1755e85b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@736d6a5c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2371aaca, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5b529706, org.springframework.test.context.event.EventPublishingTestExecutionListener@63fdab07, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7b5a12ae, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5553d0f5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1af687fe, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@14dda234, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3f390d63, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@74a6a609]
+08:05 11:19:47.045 [main] [INFO] [c.l.e.s.c.CategoryControllerTest] -Starting CategoryControllerTest using Java 17.0.5 on DESKTOP-34FIR0Q with PID 18960 (started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+08:05 11:19:47.046 [main] [INFO] [c.l.e.s.c.CategoryControllerTest] -No active profile set, falling back to 1 default profile: "default"
+08:05 11:19:47.049 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+08:05 11:19:48.310 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+08:05 11:19:48.464 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 138 ms. Found 3 JPA repository interfaces.
+08:05 11:19:50.391 [main] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+08:05 11:19:50.495 [main] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+08:05 11:19:50.570 [main] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08:05 11:19:50.924 [main] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+08:05 11:19:51.558 [main] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+08:05 11:19:51.582 [main] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+08:05 11:19:52.715 [main] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08:05 11:19:52.739 [main] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:05 11:19:53.807 [main] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08:05 11:19:54.907 [main] [INFO] [o.s.b.t.m.w.SpringBootMockServletContext] -Initializing Spring TestDispatcherServlet ''
+08:05 11:19:54.907 [main] [INFO] [o.s.t.w.s.TestDispatcherServlet] -Initializing Servlet ''
+08:05 11:19:54.908 [main] [INFO] [o.s.t.w.s.TestDispatcherServlet] -Completed initialization in 1 ms
+08:05 11:19:54.952 [main] [INFO] [c.l.e.s.c.CategoryControllerTest] -Started CategoryControllerTest in 8.514 seconds (JVM running for 10.565)
+08:05 11:19:55.350 [main] [INFO] [c.l.e.s.c.CategoryController] -Sending request to service for creating new Category: Laptops
+08:05 11:19:55.357 [main] [INFO] [c.l.e.s.c.CategoryController] -Category created successfully in database: Laptops
+08:05 11:19:55.511 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+08:05 11:19:55.514 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+08:05 11:19:55.526 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+08:05 11:21:44.119 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.lcwd.electronic.store.controllers.CategoryControllerTest], using SpringBootContextLoader
+08:05 11:21:44.134 [main] [INFO] [o.s.t.c.s.AbstractContextLoader] -Could not detect default resource locations for test class [com.lcwd.electronic.store.controllers.CategoryControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+08:05 11:21:44.136 [main] [INFO] [o.s.t.c.s.AnnotationConfigContextLoaderUtils] -Could not detect default configuration classes for test class [com.lcwd.electronic.store.controllers.CategoryControllerTest]: CategoryControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+08:05 11:21:44.425 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] -Found @SpringBootConfiguration com.lcwd.electronic.store.ElectronicStoreApplication for test class com.lcwd.electronic.store.controllers.CategoryControllerTest
+08:05 11:21:44.587 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+08:05 11:21:44.621 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5733f295, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1c3146bc, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@56c698e3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@47a86fbb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@f478a81, org.springframework.test.context.support.DirtiesContextTestExecutionListener@19553973, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7bb6ab3a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7fe7c640, org.springframework.test.context.event.EventPublishingTestExecutionListener@4c4748bf, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7ce97ee5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@32c8e539, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@73dce0e6, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5a85c92, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@32811494, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4795ded0]
+08:05 11:21:45.294 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+08:05 11:21:45.300 [main] [INFO] [c.l.e.s.c.CategoryControllerTest] -Starting CategoryControllerTest using Java 17.0.5 on DESKTOP-34FIR0Q with PID 15692 (started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+08:05 11:21:45.302 [main] [INFO] [c.l.e.s.c.CategoryControllerTest] -No active profile set, falling back to 1 default profile: "default"
+08:05 11:21:46.525 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+08:05 11:21:46.652 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 115 ms. Found 3 JPA repository interfaces.
+08:05 11:21:48.382 [main] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+08:05 11:21:48.478 [main] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+08:05 11:21:48.552 [main] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08:05 11:21:48.867 [main] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+08:05 11:21:49.523 [main] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+08:05 11:21:49.567 [main] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+08:05 11:21:50.757 [main] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08:05 11:21:50.773 [main] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:05 11:21:51.818 [main] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08:05 11:21:52.873 [main] [INFO] [o.s.b.t.m.w.SpringBootMockServletContext] -Initializing Spring TestDispatcherServlet ''
+08:05 11:21:52.873 [main] [INFO] [o.s.t.w.s.TestDispatcherServlet] -Initializing Servlet ''
+08:05 11:21:52.874 [main] [INFO] [o.s.t.w.s.TestDispatcherServlet] -Completed initialization in 1 ms
+08:05 11:21:52.902 [main] [INFO] [c.l.e.s.c.CategoryControllerTest] -Started CategoryControllerTest in 8.198 seconds (JVM running for 10.152)
+08:05 11:21:53.168 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+08:05 11:21:53.173 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+08:05 11:21:53.186 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
+08:05 11:22:40.668 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.lcwd.electronic.store.controllers.CategoryControllerTest], using SpringBootContextLoader
+08:05 11:22:40.683 [main] [INFO] [o.s.t.c.s.AbstractContextLoader] -Could not detect default resource locations for test class [com.lcwd.electronic.store.controllers.CategoryControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+08:05 11:22:40.684 [main] [INFO] [o.s.t.c.s.AnnotationConfigContextLoaderUtils] -Could not detect default configuration classes for test class [com.lcwd.electronic.store.controllers.CategoryControllerTest]: CategoryControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+08:05 11:22:40.949 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] -Found @SpringBootConfiguration com.lcwd.electronic.store.ElectronicStoreApplication for test class com.lcwd.electronic.store.controllers.CategoryControllerTest
+08:05 11:22:41.112 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+08:05 11:22:41.138 [main] [INFO] [o.s.b.t.c.SpringBootTestContextBootstrapper] -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@781f10f2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2a79d4b1, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2e9fda69, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@17cdf2d0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1755e85b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@736d6a5c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2371aaca, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5b529706, org.springframework.test.context.event.EventPublishingTestExecutionListener@63fdab07, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7b5a12ae, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5553d0f5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1af687fe, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@14dda234, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3f390d63, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@74a6a609]
+08:05 11:22:41.727 [main] [INFO] [c.l.e.s.c.CategoryControllerTest] -Starting CategoryControllerTest using Java 17.0.5 on DESKTOP-34FIR0Q with PID 20068 (started by DELL LATITUDE in C:\Users\DELL LATITUDE\Desktop\IntelliJID_Project\Electronic-Store)
+08:05 11:22:41.728 [main] [INFO] [c.l.e.s.c.CategoryControllerTest] -No active profile set, falling back to 1 default profile: "default"
+08:05 11:22:41.730 [background-preinit] [INFO] [o.h.validator.internal.util.Version] -HV000001: Hibernate Validator 6.2.5.Final
+08:05 11:22:42.896 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+08:05 11:22:43.052 [main] [INFO] [o.s.d.r.c.RepositoryConfigurationDelegate] -Finished Spring Data repository scanning in 137 ms. Found 3 JPA repository interfaces.
+08:05 11:22:44.873 [main] [INFO] [o.h.jpa.internal.util.LogHelper] -HHH000204: Processing PersistenceUnitInfo [name: default]
+08:05 11:22:44.981 [main] [INFO] [org.hibernate.Version] -HHH000412: Hibernate ORM core version 5.6.15.Final
+08:05 11:22:45.048 [main] [INFO] [o.h.annotations.common.Version] -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08:05 11:22:45.372 [main] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Starting...
+08:05 11:22:45.920 [main] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Start completed.
+08:05 11:22:45.948 [main] [INFO] [org.hibernate.dialect.Dialect] -HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+08:05 11:22:47.138 [main] [INFO] [o.h.e.t.j.p.i.JtaPlatformInitiator] -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08:05 11:22:47.167 [main] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:05 11:22:48.352 [main] [WARN] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08:05 11:22:49.448 [main] [INFO] [o.s.b.t.m.w.SpringBootMockServletContext] -Initializing Spring TestDispatcherServlet ''
+08:05 11:22:49.448 [main] [INFO] [o.s.t.w.s.TestDispatcherServlet] -Initializing Servlet ''
+08:05 11:22:49.449 [main] [INFO] [o.s.t.w.s.TestDispatcherServlet] -Completed initialization in 1 ms
+08:05 11:22:49.485 [main] [INFO] [c.l.e.s.c.CategoryControllerTest] -Started CategoryControllerTest in 8.269 seconds (JVM running for 10.221)
+08:05 11:22:49.865 [main] [INFO] [c.l.e.s.c.CategoryController] -Sending request to service for updating Category with Id: ac35231a-bc52-423b-8d58-10985632c254
+08:05 11:22:49.871 [main] [INFO] [c.l.e.s.c.CategoryController] -Category updated successfully in database: Mobiles
+08:05 11:22:49.970 [SpringApplicationShutdownHook] [INFO] [o.s.o.j.LocalContainerEntityManagerFactoryBean] -Closing JPA EntityManagerFactory for persistence unit 'default'
+08:05 11:22:49.973 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown initiated...
+08:05 11:22:49.987 [SpringApplicationShutdownHook] [INFO] [com.zaxxer.hikari.HikariDataSource] -HikariPool-1 - Shutdown completed.
