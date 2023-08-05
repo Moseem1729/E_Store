@@ -17,7 +17,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+import java.io.IOException;
 import java.util.Optional;
+import java.util.UUID;
 
 @SpringBootTest
 public class UserServiceTest {
@@ -86,4 +88,25 @@ public class UserServiceTest {
         Assertions.assertEquals(userDto.getName(), updatedUser.getName(), "Name is not updated !!");
         //Multiple assertions are valid
     }
+
+    @Test
+    void deleteUserTest() throws IOException {
+
+        String userId = UUID.randomUUID().toString();
+        Mockito.when(userRepository.findById(userId)).thenReturn(Optional.of(user));
+        userService.deleteUser(userId);
+    }
+
+    @Test
+    public void getUserByIdTest(){
+        String userId = UUID.randomUUID().toString();
+        Mockito.when(userRepository.findById(userId)).thenReturn(Optional.of(user));
+        UserDto user1 = userService.getUserById(userId);
+        Assertions.assertNotNull(user1);
+        Assertions.assertEquals(user.getUserId(), user1.getUserId(), "test failed getting user by Id !!");
+
+
+    }
+
+
 }

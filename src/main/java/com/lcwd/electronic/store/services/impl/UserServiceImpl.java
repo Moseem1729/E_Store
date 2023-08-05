@@ -71,6 +71,7 @@ public class UserServiceImpl implements UserService {
         user.setImageName(userDto.getImageName());
 
         User updatedUser = userRepository.save(user);
+        System.err.println(updatedUser.getName());
 
         UserDto updatedDto = mapper.map(updatedUser, UserDto.class);
         logger.info("Sending response to controller of user updated successfully: {} with ID: {}", updatedUser.getName(), userId);
