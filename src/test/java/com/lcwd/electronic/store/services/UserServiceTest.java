@@ -105,8 +105,9 @@ public class UserServiceTest {
         Assertions.assertNotNull(user1);
         Assertions.assertEquals(user.getUserId(), user1.getUserId(), "test failed getting user by Id !!");
 
-
     }
+
+
 
 
 }
