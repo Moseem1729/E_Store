@@ -10,6 +10,8 @@ import javax.validation.constraints.*;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
+
 @Builder
 public class UserDto {
 
