@@ -71,6 +71,7 @@ public class UserController {
     @PutMapping(value = "/update/{userId}")
     public ResponseEntity<UserDto> updateUser(@Valid @RequestBody UserDto userDto, @PathVariable String userId) {
         logger.info("Sending request to service for updating user with ID: {}", userId);
+        logger.info("User updated successfully: {}", userDto.getName());
         UserDto updatedUser = userService.updateUser(userDto, userId);
         logger.info("User updated successfully: {}", updatedUser.getName());
         return new ResponseEntity<>(updatedUser, HttpStatus.OK);

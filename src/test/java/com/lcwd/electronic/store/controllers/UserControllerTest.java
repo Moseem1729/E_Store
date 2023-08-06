@@ -28,6 +28,7 @@ import java.util.List;
 import java.util.UUID;
 
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.content;
+import static org.springframework.test.web.client.match.MockRestRequestMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -48,9 +49,9 @@ class UserControllerTest {
     private MockMvc mockMvc;
 
     @Autowired
-    private FileService fileServiceI;
+    private FileService fileService;
 
-    private User user;
+    User user;
 
     @BeforeEach
     public void setup() {
@@ -58,8 +59,8 @@ class UserControllerTest {
 
         user = User.builder()
                 .userId(id)
-                .name("Akshay")
-                .email("akki123@gmail.com")
+                .name("Moseem")
+                .email("moseem@gmail.com")
                 .password("12345")
                 .gender("Male")
                 .about("I am Developer")
@@ -69,7 +70,7 @@ class UserControllerTest {
     }
 
     @Test
-    void createUser() throws Exception {
+    void createUserTest() throws Exception {
 
         UserDto userDto = modelMapper.map(user, UserDto.class);
 
@@ -77,13 +78,13 @@ class UserControllerTest {
 
         //actual request for url
         this.mockMvc.perform(
-                        MockMvcRequestBuilders.post("/users/")
+                        MockMvcRequestBuilders.post("/users/create/")
                                 .contentType(MediaType.APPLICATION_JSON)
                                 .content(convertObjectToJsonString(user))
                                 .contentType(MediaType.APPLICATION_JSON))
                 .andDo(print())
                 .andExpect(status().isCreated());
-        // .andExpect((ResultMatcher) jsonPath("$.name").exists());
+                //.andExpect((ResultMatcher) jsonPath("$.name").exists());
 
     }
 
@@ -98,13 +99,13 @@ class UserControllerTest {
     }
 
     @Test
-    void updateUser() throws Exception {
+    void updateUserTest() throws Exception {
 
         String userId = UUID.randomUUID().toString();
         UserDto userDto = modelMapper.map(user, UserDto.class);
         Mockito.when(userService.updateUser(userDto, userId)).thenReturn(userDto);
 
-        mockMvc.perform(MockMvcRequestBuilders.put("/users/" + userId)
+        mockMvc.perform(MockMvcRequestBuilders.put("/users/update/" + userId)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(convertObjectToJsonString(user))
                         .accept(MediaType.APPLICATION_JSON))
@@ -114,7 +115,7 @@ class UserControllerTest {
     }
 
     @Test
-    void deleteUser() throws Exception {
+    void deleteUserTest() throws Exception {
         String userId = UUID.randomUUID().toString();
         UserDto userDto = modelMapper.map(user, UserDto.class);
 
@@ -126,31 +127,31 @@ class UserControllerTest {
     }
 
     @Test
-    void getAllUsers() throws Exception {
+    void getAllUsersTest() throws Exception {
 
         UserDto userDto1 = UserDto.builder().userId(UUID.randomUUID().toString())
                 .gender("male")
-                .name("Akki")
+                .name("Moseem")
                 .about("I am an java developer")
                 .password("123")
-                .email("akki123@gmail.com")
+                .email("moseem@gmail.com")
                 .imageName("ak.png").build();
 
         UserDto userDto2 = UserDto.builder().userId(UUID.randomUUID().toString())
                 .gender("male")
-                .name("Sandip")
-                .about("I am an tester")
-                .password("456")
-                .email("san123@gmail.com")
-                .imageName("sn.png").build();
+                .name("cj")
+                .about("developer")
+                .password("345gd")
+                .email("cj@gmail.com")
+                .imageName("123.png").build();
 
         UserDto userDto3 = UserDto.builder().userId(UUID.randomUUID().toString())
                 .gender("male")
-                .name("Rahul")
-                .about("I am an java developer")
-                .password("898")
-                .email("rahul123@gmail.com")
-                .imageName("rk.png").build();
+                .name("Yasho")
+                .about("I am Ironman")
+                .password("123asd")
+                .email("yashodeep@gmail.com")
+                .imageName("abc.png").build();
 
 
         PageableResponse<UserDto> pageableResponse = new PageableResponse<>();
@@ -172,7 +173,7 @@ class UserControllerTest {
     }
 
     @Test
-    void getUserById() throws Exception {
+    void getUserByIdTest() throws Exception {
 
         String userId = UUID.randomUUID().toString();
 
@@ -188,7 +189,7 @@ class UserControllerTest {
     }
 
     @Test
-    void getUserByEmail() throws Exception {
+    void getUserByEmailTest() throws Exception {
 
         String email = "sahil@gmail.com";
 
@@ -207,30 +208,30 @@ class UserControllerTest {
     }
 
     @Test
-    void getUserByKeyword() throws Exception {
+    void getUserByKeywordTest() throws Exception {
         UserDto userDto1 = UserDto.builder().userId(UUID.randomUUID().toString())
                 .gender("male")
-                .name("Akki")
+                .name("Moseem")
                 .about("I am an java developer")
                 .password("123")
-                .email("akki123@gmail.com")
+                .email("moseem@gmail.com")
                 .imageName("ak.png").build();
 
         UserDto userDto2 = UserDto.builder().userId(UUID.randomUUID().toString())
                 .gender("male")
-                .name("Sandip")
-                .about("I am an tester")
-                .password("456")
-                .email("san123@gmail.com")
-                .imageName("sn.png").build();
+                .name("cj")
+                .about("developer")
+                .password("345gd")
+                .email("cj@gmail.com")
+                .imageName("123.png").build();
 
         UserDto userDto3 = UserDto.builder().userId(UUID.randomUUID().toString())
                 .gender("male")
-                .name("Rahul")
-                .about("I am an java developer")
-                .password("898")
-                .email("rahul123@gmail.com")
-                .imageName("rk.png").build();
+                .name("Yasho")
+                .about("I am Ironman")
+                .password("123asd")
+                .email("yashodeep@gmail.com")
+                .imageName("abc.png").build();
 
         List list = new ArrayList();
         list.add(userDto1);
@@ -256,7 +257,7 @@ class UserControllerTest {
         String filePath = "image/users";
         String userId = UUID.randomUUID().toString();
 
-        Mockito.when(fileServiceI.uploadImage(Mockito.any(), Mockito.anyString())).thenReturn(fileName);
+        Mockito.when(fileService.uploadImage(Mockito.any(), Mockito.anyString())).thenReturn(fileName);
 
         UserDto userDto = modelMapper.map(user, UserDto.class);
         Mockito.when(userService.getUserById(Mockito.anyString())).thenReturn(userDto);
@@ -281,7 +282,7 @@ class UserControllerTest {
         Mockito.when(userService.getUserById(userId)).thenReturn(userDto);
 
         InputStream resource = new FileInputStream(userDto.getImageName());
-        Mockito.when(fileServiceI.getResource(Mockito.anyString(), Mockito.anyString())).thenReturn(resource);
+        Mockito.when(fileService.getResource(Mockito.anyString(), Mockito.anyString())).thenReturn(resource);
 
         mockMvc.perform(MockMvcRequestBuilders.get("/users/image/" + userId)
                         .accept(MediaType.APPLICATION_JSON))
