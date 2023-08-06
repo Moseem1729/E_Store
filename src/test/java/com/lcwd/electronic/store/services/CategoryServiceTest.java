@@ -11,10 +11,14 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
+import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
+@SpringBootTest
 public class CategoryServiceTest {
 
     @Autowired
@@ -26,12 +30,28 @@ public class CategoryServiceTest {
     private CategoryService categoryService;
 
     Category category;
+    Category category1;
+
+    CategoryDto categoryDto;
+
+    List<Category> categories;
+
 
     @BeforeEach
     public void init(){
 
 
+        //String id = UUID.randomUUID().toString();
         category = Category.builder()
+                //.categoryId(id)
+                .title("Laptops")
+                .description("Laptops are from all top brands")
+                .coverImage("abc.png")
+                .build();
+
+        //String id2 = UUID.randomUUID().toString();
+        category1 = Category.builder()
+                //.categoryId(id2)
                 .title("Mobiles")
                 .description("Mobiles are from all top brands")
                 .coverImage("abc.png")
@@ -41,7 +61,7 @@ public class CategoryServiceTest {
 
     //create user
     @Test
-    public void createUserTest(){
+    public void createTest(){
         Mockito.when(categoryRepository.save(Mockito.any())).thenReturn(category);
 
         CategoryDto categoryDto1 = categoryService.create(mapper.map(category, CategoryDto.class));
@@ -49,16 +69,16 @@ public class CategoryServiceTest {
         System.out.println(categoryDto1.getTitle());
 
         Assertions.assertNotNull(categoryDto1);
-        Assertions.assertEquals("Mobiles", categoryDto1.getTitle());
+        Assertions.assertEquals("Laptops", categoryDto1.getTitle());
 
     }
 
     //update user test
     @Test
-    public void updateUserTest(){
+    public void updateTest(){
 
-        String userId = "anyUserId";
-        CategoryDto categoryDto = CategoryDto.builder()
+        String categoryId = "anyCategoryId";
+        categoryDto = CategoryDto.builder()
                 .title("Mobiles")
                 .description("Mobiles are from all top brands")
                 .coverImage("abc.png")
@@ -67,7 +87,7 @@ public class CategoryServiceTest {
         Mockito.when(categoryRepository.findById(Mockito.anyString())).thenReturn(Optional.of(category));
         Mockito.when(categoryRepository.save(Mockito.any())).thenReturn(category);
 
-        CategoryDto updatedCategory = categoryService.update(categoryDto, userId);
+        CategoryDto updatedCategory = categoryService.update(categoryDto, categoryId);
 
         System.out.println(updatedCategory.getTitle());
         System.out.println(updatedCategory.getCoverImage());
@@ -76,4 +96,6 @@ public class CategoryServiceTest {
         Assertions.assertEquals(categoryDto.getTitle(), updatedCategory.getTitle(), "Title is not updated !!");
         //Multiple assertions are valid
     }
+
+
 }
